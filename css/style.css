@@ -1,9 +1,206 @@
-#logo
-{
-	width:200px;
-	height:120px;
+@font-face{
+
+	font-family: "segoiui";
+	src:url('../fonts/segoeui.ttf');
+
 }
+body
+{
+	background-color: #CCCCCC;
+}
+
 .control-group
+{
+
+}
+.logintext
+{
+	width:100px;
+	height:25px;
+	display:inline-block;
+
+}
+#loginbutton
+{
+	display:inline-block;
+	width:20%;
+}
+#loginbutton >button{
+	width:100%;
+}
+#usernameandpassword
+{
+	display:inline-block;
+	width:50%;
+
+}
+#usernameandpassword >input
+{
+	width:45%;
+}
+#Login
+{
+	vertical-align: middle;
+}
+#searchbox
 {
 	display:inline-block;
 }
+#searchtext
+{
+	display:inline-block;
+}
+#search >form
+{
+	display:inline-block;
+}
+#signupbutton 
+{
+	display:inline-block;
+	width:20%;
+}
+#signupbutton >button
+{
+	width:100%;
+	background-color: #C93262;
+	border:none;
+}
+#identity
+{
+	font-size: 2.0em;
+	font-family: "segoiui", verdana, serif;
+	color:#FFFFFF;
+	padding-left:20px;
+}
+#toprow
+{
+	background-color: #469400;
+}
+#logincolumn
+{
+	margin-top:5px;
+
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  #slides
+  {
+
+  }
+  #searchwide
+  {
+  	margin-top:30px;
+  	width:100%;
+  	font-size: 1.4em;
+  }
+  #browsecharities
+  {
+  	display:inline-block;
+  	width:100%;
+  	border-radius: 0px;
+  	background-color: #C93262;
+  	height:100%;
+  	border:none;
+  	font-size:1.4em;
+
+  }
+  #searchwide
+  {
+  	display: inline-block;
+  }
+  #blog
+  {
+  	margin-top: 30px;
+  	display:inline-block;
+  	background-color: #FFFFFF;
+  	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  #climber 
+  {
+  	width:378px;
+  	height:615px;
+  	display:inline-block;
+  }
+  #myblog
+  {
+  	display:inline-block;
+  	font-family: "segoiui", verdana, serif;
+  	width:65%;
+  	vertical-align: top;
+
+  }
+  #browsebutton
+  {
+  	width:20%;
+  	display:inline-block;
+  	border-radius: 0px;
+  	height:30px;
+
+  }
+  #search{
+  	width:75%;
+  	display:inline-block;
+  	height:30px;
+  }
+  #blogimage
+  {
+  	background-image:url('../img/test2.jpg');
+  	width:30%;
+  	height:800px;
+  	display:inline-block;
+  	background-repeat: no-repeat;
+  	font-size: 2em;
+  	color:#FFFFFF;
+  }
+  #whatweareabout
+  {
+  	margin-top: 20px;
+
+  }
+  h1
+  {
+  	font-size: 1.5em;
+  	margin:0px;
+  }
+
+
+@media (max-width: 767px){
+	#logincolumn
+	{
+		display:none;
+		color:#469400;
+	}
+
+}
+

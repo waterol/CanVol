@@ -27,6 +27,7 @@ body
 }
 #loginbutton >button{
 	width:100%;
+	height:25px;
 }
 #usernameandpassword
 {
@@ -37,6 +38,8 @@ body
 #usernameandpassword >input
 {
 	width:45%;
+	margin-bottom: 10px;
+	
 }
 #Login
 {
@@ -58,12 +61,15 @@ body
 {
 	display:inline-block;
 	width:20%;
+	height:25px;
+	
 }
 #signupbutton >button
 {
 	width:100%;
 	background-color: #C93262;
 	border:none;
+	height:25px;
 }
 #identity
 {
@@ -71,6 +77,8 @@ body
 	font-family: "segoiui", verdana, serif;
 	color:#FFFFFF;
 	padding-left:20px;
+	margin-top: -20px;
+	padding-top: 0px;
 }
 #toprow
 {
@@ -175,13 +183,14 @@ body
   }
   #blogimage
   {
-  	background-image:url('../img/test2.jpg');
+  	background-image:url('../img/test3.jpg');
   	width:30%;
   	height:800px;
   	display:inline-block;
   	background-repeat: no-repeat;
   	font-size: 2em;
   	color:#FFFFFF;
+  	background-size: 800px;
   }
   #whatweareabout
   {

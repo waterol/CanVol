@@ -204,6 +204,23 @@ body
   	margin:0px;
   }
 
+  #envelope
+  {
+    font-size: 1.5em;
+  }
+  #reputation
+  {
+    font-size: 1.5em;
+    padding-left:20px;
+    margin-top: -5px;
+  }
+  #profilepic
+  {
+    width:32px;
+    height:32px;
+    margin-left:20px;
+  }
+
 
 @media (max-width: 767px){
 	#logincolumn

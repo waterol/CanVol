@@ -220,6 +220,18 @@ body
     height:32px;
     margin-left:20px;
   }
+  #profilebigcontainer
+  {
+    display: inline-block;
+  }
+  #profilebiocontainer
+  {
+    display: inline-block;
+  }
+  .recentactivitypost
+  {
+    border:1px black solid;
+  }
 
 
 @media (max-width: 767px){

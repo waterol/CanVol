@@ -24,6 +24,7 @@ body
 {
 	display:inline-block;
 	width:20%;
+  background-color: #00CBE9;
 }
 #loginbutton >button{
 	width:100%;
@@ -82,7 +83,7 @@ body
 }
 #toprow
 {
-	background-color: #469400;
+	background-color: #8BC53F;
 }
 #logincolumn
 {
@@ -99,7 +100,7 @@ body
   }
 
 .rslides li {
-  -webkit-backface-visibility: hidden;
+ -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
   width: 100%;

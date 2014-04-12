@@ -56,8 +56,17 @@ h1
 
 #logincolumn
 {
-  width: 200px;
+  width: 40%;
+  margin-top: 5px;
 }
+
+#loggedincolumn
+{
+  width: 200px;
+  
+  margin-top: 5px;
+}
+
 
 /* Top Login Area */
 #loginbutton
@@ -67,6 +76,7 @@ h1
   height: 25px;
   background-color: #00CBE9;
 }
+
 
 
 #signupbutton 

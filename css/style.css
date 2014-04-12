@@ -33,6 +33,27 @@ h1
 }
 /* End Identity */
 
+/* Top Row Control */
+#toprow
+{
+  background-color: #8BC53F;
+  height: 45px;
+}
+
+.toprowleft
+{
+  float: left;
+  display: inline-block;
+  width: 20%;
+}
+
+.toprowright
+{
+  float: right;
+  display: inline-block;
+  width: 40%;
+}
+
 /* Top Login Area */
 #loginbutton
 {
@@ -106,10 +127,7 @@ h1
 }
 
 
-#toprow
-{
-	background-color: #8BC53F;
-}
+
 
 #logincolumn
 {

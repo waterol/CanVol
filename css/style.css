@@ -54,6 +54,11 @@ h1
   width: 40%;
 }
 
+#logincolumn
+{
+  width: 200px;
+}
+
 /* Top Login Area */
 #loginbutton
 {
@@ -127,13 +132,6 @@ h1
 }
 
 
-
-
-#logincolumn
-{
-	margin-top:5px;
-
-}
 .rslides {
   position: relative;
   list-style: none;

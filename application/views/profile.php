@@ -2,7 +2,7 @@
       <div class="container">
         <div id="profiletop">
           <div id="profilebigcontainer">
-            <img src="img/portrait.png" id="profilebig">
+            <img src="img/profilepic.jpg" id="profilebig">
           </div>
           <div id="profilebiocontainer">
             <h2> Liam Waterous </h2>

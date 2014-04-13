@@ -126,6 +126,35 @@ h1
 }
 /* End Top Login Area */
 
+/* Call to action area */
+#topexplain
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3.0em;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.hugeicon
+{
+  font-size: 4.0em;
+}
+
+#calltoaction
+{
+  text-align: center;
+}
+
+.ctatext
+{
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+
+
+/* End call to Action Area */
+
 #searchbox
 {
 	display:inline-block;
@@ -292,6 +321,11 @@ box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   {
   	display:none;
   	color:#469400;
+  }
+
+  .hugeicon
+  {
+    margin-top: 40px;
   }
 
 }

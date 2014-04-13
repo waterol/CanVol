@@ -4,10 +4,10 @@
         <li><img src="img/test.jpg" alt=""></li>
         <li><img src="img/test4.jpg" alt=""></li>
       </ul>
-
-
-
     </div>
+
+
+
     <div class="container">
       <div id="search">
         <input id="searchwide" name="search" type="text" placeholder="Search for Charities, People etc." class="input-sm search" required="">
@@ -16,14 +16,25 @@
         <button id="browsecharities" name="signup"> Browse Charities!</button>
       </div>
 
-      <div id="whatweareabout" class="well">
-        <h1> What are we about?</h1>
-        <p> tache church-key authentic. Odd Future Marfa cardigan normcore Vice, tousled viral Portland single-origin coffee narwhal. Plaid deep v Williamsburg, quinoa twee actually locavore post-ironic four loko asymmetrical leggings Cosby sweater church-key. Pitchfork actually PBR, craft beer pour- over twee Tonx seitan Williamsburg. Shoreditch stumptown Odd Future Pinterest, messenger bag slow-carb narwhal yr deep v nic four loko asymmetrical leggings Cosby sweater church-key. Pitchfork actually PBR, craft beer pour- over twee Tonx seitan Williamsburg. Shoreditch stumptown Odd Future Pinterest, messenge</p>
+      <div id="topexplain">How it works...</div>
+
+      <div class="row" id="calltoaction">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-search hugeicon"></span>
+          <p class="ctatext">Find a local charity to volunteer for and read reviews</p>
+        </div>
+
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-heart hugeicon"></span>
+          <p class="ctatext">Volunteer! Make a difference in your community</p>
+        </div>
+
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-pencil hugeicon"></span>
+          <p class="ctatext">Write a review for the charity and tell others of your experiences</p>
+        </div>
+
       </div>
-
-
-
-
 
       <div id="blog">
         <div id="blogimage">

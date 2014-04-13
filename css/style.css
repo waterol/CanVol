@@ -6,7 +6,7 @@
 }
 body
 {
-	background-color: #8BC53F;
+	background-color: #DFDFDF;
   font-family: "segoiui", verdana, serif;
 }
 
@@ -273,7 +273,7 @@ h1
   display:inline-block;
   width:100%;
   border-radius: 0px;
-  background-color: #C93262;
+  background-color: #D23988;
   height:100%;
   border:none;
   font-size:1.4em;
@@ -400,6 +400,7 @@ h1
   display: inline-block;
   vertical-align: top;
   padding:0px;
+  width:80%;
 }
 #profilebiocontainer >h2
 {

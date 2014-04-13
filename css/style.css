@@ -302,6 +302,7 @@ h1
 	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  margin-bottom: 30px;
 }
 
 #climber 
@@ -335,6 +336,21 @@ h1
 
 
 /* End blog */
+
+/* Footer */
+#footer
+{
+  text-align: center;
+}
+
+#footer > p
+{
+  margin: 0px;
+}
+
+
+
+/* end footer */
 
 /* logged in area */
 

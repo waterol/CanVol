@@ -4,9 +4,14 @@
         <li><img src="img/test.jpg" alt=""></li>
         <li><img src="img/test4.jpg" alt=""></li>
       </ul>
+
+      <div id="slidetext">
+        <p id="st-leader">CanVol</p>
+        <p id="st-follower">A Local Charity Network for Youth</p>
+        <button class="btn btn-large btn-primary">Get Started</button>
+      </div>
+
     </div>
-
-
 
     <div class="container">
       <div id="search">
@@ -20,18 +25,24 @@
 
       <div class="row" id="calltoaction">
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-search hugeicon"></span>
-          <p class="ctatext">Find a local charity to volunteer for and read reviews</p>
+          <div class="cta-inner">
+            <span class="glyphicon glyphicon-search hugeicon"></span>
+            <p class="ctatext">Find a local charity to volunteer for and read reviews</p>
+          </div>
         </div>
 
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-heart hugeicon"></span>
-          <p class="ctatext">Volunteer! Make a difference in your community</p>
+          <div class="cta-inner">
+            <span class="glyphicon glyphicon-heart hugeicon"></span>
+            <p class="ctatext">Volunteer! Make a difference in your community</p>
+          </div>
         </div>
 
         <div class="col-sm-4">
-          <span class="glyphicon glyphicon-pencil hugeicon"></span>
-          <p class="ctatext">Write a review for the charity and tell others of your experiences</p>
+          <div class="cta-inner">
+            <span class="glyphicon glyphicon-pencil hugeicon"></span>
+            <p class="ctatext">Write a review for the charity and tell others of your experiences</p>
+          </div>
         </div>
 
       </div>

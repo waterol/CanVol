@@ -8,8 +8,39 @@
             <h2> Liam Waterous </h2>
             <p> American Apparel plaid pour-over, chambray flexitarian single-origin coffee meh umami squid biodiesel. Mlkshk authentic Shoreditch, drinking vinegar slow-carb artisan church-key lomo craft beer hashtag Marfa. Plaid High Life hella, leggings American Apparel ethical literally. Church-key selfies pork belly XOXO, blog messenger bag forage pug plaid pop-up. Pug aesthetic butcher, dreamcatcher small batch selvage artisan Tonx literally Truffaut mixtape mustache photo booth. Farm-to-table authentic iPhone, hella cliche chillwave slow-carb post-ironic plaid banh mi fap vegan. Neutra four loko typewriter locavore. </p>
           </div>
-          <div id="collage">
 
+          <div id="collage">
+            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>
+          </div>
+          <div id="post">
+            <div id="postleft">
+              <form>
+                <input type="text" name="charity" placeholder="Type a Charity...">
+
+              </form>
+              <p>
+                By <br> Liam Waterous
+              </p>
+
+
+            </div>
+            <div id="postright">
+              <form>
+
+                <textarea id="posttext"> </textarea>
+
+
+              </form>
+
+            </div>
 
           </div>
           <div id="recentactivity">

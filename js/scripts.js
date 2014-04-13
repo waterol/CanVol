@@ -3,3 +3,12 @@
     	
     });
   });
+$('#collage').isotope({
+
+	itemSelector:'.item',
+	layoutMode:'masonary'
+
+
+
+
+});

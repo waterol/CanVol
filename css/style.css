@@ -391,7 +391,8 @@ h1
 
 .recentactivitypost
 {
-  border:1px black solid;
+  border:1px #383838 solid;
+  margin-top: 30px;
 }
 
 /* End profile */

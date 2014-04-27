@@ -453,6 +453,46 @@ h1
 
 /* End Get Started */
 
+/* Start Charity Profile */
+
+#charityimage
+{
+  width:96%;
+  margin-left:4%;
+  margin-top: 4%;
+}
+#charitybio
+{
+  margin-left:4%;
+  margin-top:2%;
+  background-color: #FFFFFF
+}
+#nameofcharity
+{
+  font-size: 2.5em;
+  margin-top: 1%;
+}
+#tableinformation > tbody > tr > td
+{
+  padding:5px;
+  font
+}
+
+#percentagecharity
+{
+  font-size: 4em;
+  background-color: #D23988;
+  width:120px;
+  height:120px;
+  border-radius: 60px;
+  padding: 12px;
+  margin-top: 30px;
+
+}
+
+/* End Charity Profile */
+
+
 
 /* Media block mobile */
 @media (max-width: 767px){
@@ -461,7 +501,11 @@ h1
   	display:none;
   	color:#469400;
   }
-
+  #charityimage
+  {
+    width:100%;
+    margin-left:0%;
+  }
   .hugeicon
   {
     margin-top: 40px;

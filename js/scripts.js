@@ -2,13 +2,15 @@
     $(".rslides").responsiveSlides({
     	
     });
-  });
-$('#collage').isotope({
 
-	itemSelector:'.item',
-	layoutMode:'masonary'
+    $('#collage').isotope({
+
+		itemSelector:'.item',
+		masonary: {
+			
+		}
 
 
-
-
+	});
 });
+

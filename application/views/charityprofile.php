@@ -1,4 +1,4 @@
-<div ckass="container">
+<div class="container">
 	<div id="charityinfo">
 		<div class="row">
 			<div class="col-sm-4">
@@ -7,7 +7,10 @@
 
 				</div>
 				<div id="charitybio">
-				Cliche Marfa Neutra proident aliquip. Tumblr enim hella Godard vinyl magna. Quis Tonx banjo, jean shorts narwhal YOLO cupidatat. XOXO nesciunt banh mi accusamus delectus, id plaid Godard retro brunch. Seitan odio flexitarian meggings Pinterest eu cupidatat cillum. Mustache McSweeney's ethnic, yr authentic reprehenderit blog fashion axe do nihil qui occupy squid proident. Ut selvage kale chips bespoke nulla, keytar master cleanse seitan tattooed labore
+				<p>
+					The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
+
+				</p>
 
 				</div>
 
@@ -89,6 +92,117 @@
 		</div>
 
 	</div>
+	<div id="collage">
+            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>            <div class="item">
+              <img src="img/france1.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="img/france2.jpg">
+            </div>
+            <div class="item">
+              <img src="img/france3.jpg">
+            </div>
+    </div>
+
+	<div id="post">
+            <div id="postleft">
+              <form>
+                <input type="text" name="charity" placeholder="Type a Charity...">
+
+              </form>
+              <p>
+                By <br> Liam Waterous
+              </p>
+
+
+            </div>
+            <div id="postright">
+              <form>
+
+                <textarea id="posttext"> </textarea>
+
+
+              </form>
+
+            </div>
+
+          </div>
+          <div id="recentactivity">
+            <div class="recentactivitypost">
+              <h2> Calgary Drop in Center </h2>
+              <p> ajksdl;fja;lksdjf;alksdjf;laksjd;lkajf;lkasjd;lfkj;lasdkjfl;kdsjaf;lkjsdf;klsjflk;sdjkl;fjdskljfl;ksdjfkljsdkl;jfklds;jfkl;dsjklf;jdskl;jfkl;sdjfkl;sdjfkl;sdjfkl;asdjfl;ksdjfkl;as </p>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
 
 
 

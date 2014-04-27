@@ -423,8 +423,7 @@ h1
 }
 .item > img {
 
-  width:200px;
-  height:150px;
+
 }
 
 #postleft
@@ -457,15 +456,14 @@ h1
 
 #charityimage
 {
-  width:96%;
-  margin-left:4%;
+  width:100%;
   margin-top: 4%;
 }
 #charitybio
 {
-  margin-left:4%;
   margin-top:2%;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  padding:10px;
 }
 #nameofcharity
 {
@@ -488,6 +486,10 @@ h1
   padding: 12px;
   margin-top: 30px;
 
+}
+#collage
+{
+  height:200px;
 }
 
 /* End Charity Profile */

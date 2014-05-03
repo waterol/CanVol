@@ -94,79 +94,25 @@
 	</div>
 	<div id="collage">
             <div class="item">
-              <img src="img/france1.jpg">
+              <img src="img/land1.jpg">
             </div>
             
             <div class="item">
-              <img src="img/france2.jpg">
+              <img src="img/land2.jpg">
             </div>
             <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
+              <img src="img/land3.jpg">
+            </div>           
+            <div class="item">
+              <img src="img/landvertical.jpg">
             </div>
             
             <div class="item">
-              <img src="img/france2.jpg">
+              <img src="img/pano1.jpg">
             </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>
-    </div>
+      
+        </div>
+                    
 
 	<div id="post">
             <div id="postleft">

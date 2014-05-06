@@ -422,9 +422,6 @@ h1
 
 }
 .item > img {
-  width:20%;
-  height:20%;
-  display:inline-block;
 
 }
 
@@ -496,7 +493,14 @@ h1
 }
 #collage
 {
-  height:200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#calendar
+{
+  background-color: #FFFFFF;
+  padding: 20px;
 }
 
 /* End Charity Profile */

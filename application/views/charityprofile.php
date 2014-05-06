@@ -94,24 +94,27 @@
 	</div>
 	<div id="collage">
             <div class="item">
-              <img src="img/land1.jpg">
+              <img src="img/land1.jpg" width="200" height="200">
             </div>
             
             <div class="item">
-              <img src="img/land2.jpg">
+              <img src="img/land2.jpg" width="200" height="200">
             </div>
             <div class="item">
-              <img src="img/land3.jpg">
+              <img src="img/land3.jpg" width="200" height="200">
             </div>           
             <div class="item">
-              <img src="img/landvertical.jpg">
+              <img src="img/landvertical.jpg" width="200" height="200">
             </div>
             
-            <div class="item">
-              <img src="img/pano1.jpg">
-            </div>
       
         </div>
+
+     <h2>Upcoming Opportunities</h2>
+
+     <div id="calendar">
+
+     </div>
                     
 
 	<div id="post">

@@ -11,7 +11,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/responsiveslides.js"></script>
     <script src="js/isotope.min.js"></script>
-    <script src="js/underscore.min.js"> </script>
+    <script src="js/underscore-min.js"> </script>
     <script src="js/calendar.js"></script>
     <script src="js/scripts.js"> </script>
 

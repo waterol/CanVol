@@ -15,9 +15,12 @@
 
     if($('#calendar').length > 0)
     	var calendar = $("#calendar").calendar(
-                {
-                    tmpl_path: "tmpls/",
-                    events_source: function () { return []; }
-                });  
+        {
+            tmpl_path: config.base + "tmpls/",
+            events_source: config.base + 'charityprofile/generateCalendar'
+        });  
+
 });
 
+
+    console.log(config.base + 'charityprofile/generateCalendar');

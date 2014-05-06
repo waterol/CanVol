@@ -6,4 +6,10 @@ class Charityprofile extends MY_Controller {
 	{
 		$this->loadview('charityprofile');
 	}
+
+	public function generateCalendar()
+	{
+		$this->load->view('democalendar');
+		
+	}
 }

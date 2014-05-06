@@ -503,6 +503,11 @@ h1
   padding: 20px;
 }
 
+#calendarcontrol
+{
+  float: right;
+}
+
 /* End Charity Profile */
 
 

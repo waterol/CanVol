@@ -93,65 +93,71 @@
 
 	</div>
 	<div id="collage">
-            <div class="item">
-              <img src="img/land1.jpg" width="200" height="200">
-            </div>
-            
-            <div class="item">
-              <img src="img/land2.jpg" width="200" height="200">
-            </div>
-            <div class="item">
-              <img src="img/land3.jpg" width="200" height="200">
-            </div>           
-            <div class="item">
-              <img src="img/landvertical.jpg" width="200" height="200">
-            </div>
+        <div class="item">
+          <img src="img/land1.jpg" width="200" height="200">
+        </div>
+        
+        <div class="item">
+          <img src="img/land2.jpg" width="200" height="200">
+        </div>
+        <div class="item">
+          <img src="img/land3.jpg" width="200" height="200">
+        </div>           
+        <div class="item">
+          <img src="img/landvertical.jpg" width="200" height="200">
+        </div>
             
       
-        </div>
+    </div>
 
-     <h2>Upcoming Opportunities</h2>
+	<div class="btn-group" id="calendarcontrol">
+		<button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
+		<button class="btn" data-calendar-nav="today">Today</button>
+		<button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
+	</div>
+    <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
 
-     <div id="calendar">
 
-     </div>
+	<div id="calendar">
+
+	</div>
                     
 
 	<div id="post">
-            <div id="postleft">
-              <form>
-                <input type="text" name="charity" placeholder="Type a Charity...">
+	    <div id="postleft">
+	      <form>
+	        <input type="text" name="charity" placeholder="Type a Charity...">
 
-              </form>
-              <p>
-                By <br> Liam Waterous
-              </p>
-
-
-            </div>
-            <div id="postright">
-              <form>
-
-                <textarea id="posttext"> </textarea>
+	      </form>
+	      <p>
+	        By <br> Liam Waterous
+	      </p>
 
 
-              </form>
+	    </div>
+	    <div id="postright">
+	      <form>
 
-            </div>
-
-          </div>
-          <div id="recentactivity">
-            <div class="recentactivitypost">
-              <h2> Calgary Drop in Center </h2>
-              <p> ajksdl;fja;lksdjf;alksdjf;laksjd;lkajf;lkasjd;lfkj;lasdkjfl;kdsjaf;lkjsdf;klsjflk;sdjkl;fjdskljfl;ksdjfkljsdkl;jfklds;jfkl;dsjklf;jdskl;jfkl;sdjfkl;sdjfkl;sdjfkl;asdjfl;ksdjfkl;as </p>
-
-            </div>
-
-          </div>
+	        <textarea id="posttext"> </textarea>
 
 
+	      </form>
 
-        </div>
+	    </div>
+
+	  </div>
+	  <div id="recentactivity">
+	    <div class="recentactivitypost">
+	      <h2> Calgary Drop in Center </h2>
+	      <p> ajksdl;fja;lksdjf;alksdjf;laksjd;lkajf;lkasjd;lfkj;lasdkjfl;kdsjaf;lkjsdf;klsjflk;sdjkl;fjdskljfl;ksdjfkljsdkl;jfklds;jfkl;dsjklf;jdskl;jfkl;sdjfkl;sdjfkl;sdjfkl;asdjfl;ksdjfkl;as </p>
+
+	    </div>
+
+	  </div>
+
+
+
+	</div>
 
 
 

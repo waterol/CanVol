@@ -20,14 +20,11 @@
 
 				<div id="nameofcharity">
 					Michael J. Fox
-
-
 				</div>
+
 				<div id="contactinformation">
 					<table id="tableinformation">
 						<thead>
-
-
 						</thead>
 						<tbody>
 							<tr>

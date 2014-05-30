@@ -1,13 +1,153 @@
 
       <div class="container">
         <div id="profiletop">
-          <div id="profilebigcontainer">
-            <img src="img/profilepic.jpg" id="profilebig">
+        <div class="row">
+      <div class="col-sm-2">
+        <div id="profilelogo">
+          <img id="profileimage" src="img/portrait.png">
+
+        </div>
+        <div id="profilereputation">
+          6,093 pts.
+
+        </div>
+      
+
+      </div>
+
+      <div class="col-sm-4">
+
+        <div id="nameofprofile">
+          Larry Smith
+
+
+        </div>
+        <div id="profilecontanctinfo">
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
           </div>
-          <div id="profilebiocontainer">
-            <h2> Liam Waterous </h2>
-            <p> American Apparel plaid pour-over, chambray flexitarian single-origin coffee meh umami squid biodiesel. Mlkshk authentic Shoreditch, drinking vinegar slow-carb artisan church-key lomo craft beer hashtag Marfa. Plaid High Life hella, leggings American Apparel ethical literally. Church-key selfies pork belly XOXO, blog messenger bag forage pug plaid pop-up. Pug aesthetic butcher, dreamcatcher small batch selvage artisan Tonx literally Truffaut mixtape mustache photo booth. Farm-to-table authentic iPhone, hella cliche chillwave slow-carb post-ironic plaid banh mi fap vegan. Neutra four loko typewriter locavore. </p>
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
           </div>
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
+          </div>
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
+          </div>
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
+          </div>
+          <div>
+            <div id="profile-datejoined" class="profileinfo">
+              Date Joined
+            </div>
+            <div id="profiledatejoinedvalue" class="profileinfovalue">
+              May 19, 2014
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+<!--
+        <div id="contactinformation">
+          <table id="tableinformation">
+            <thead>
+
+
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+
+                  link
+                </td>
+                <td>
+                  <a href="www.michaeljfoxfoundation.com"> www.michaeljfoxjoundation.com
+                  </a>
+
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  email
+                </td>
+                <td>
+
+                  michael@michaeljfox.com
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  phone number
+                </td>
+                <td>
+
+                  (403) 867-5309
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                adress
+                </td>
+
+                <td>
+                  1111 Fake Street
+
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+-->
+      </div>
+
+      <div class="col-sm-6">
+          <div id="charitybio">
+        <p>
+          The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
+
+        </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
           
           <div id="collage">
             <div class="item">
@@ -20,7 +160,17 @@
               <img src="img/france3.jpg">
             </div>
           </div>
-          <div id="post">
+       
+        <div class="btn-group" id="calendarcontrol">
+          <button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
+          <button class="btn" data-calendar-nav="today">Today</button>
+          <button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
+        </div>
+          <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
+        <div id="calendar">
+
+  </div>
+     <div id="post">
             <div id="postleft">
               <form>
                 <input type="text" name="charity" placeholder="Type a Charity...">
@@ -45,8 +195,15 @@
           </div>
           <div id="recentactivity">
             <div class="recentactivitypost">
-              <h2> Calgary Drop in Center </h2>
-              <p> ajksdl;fja;lksdjf;alksdjf;laksjd;lkajf;lkasjd;lfkj;lasdkjfl;kdsjaf;lkjsdf;klsjflk;sdjkl;fjdskljfl;ksdjfkljsdkl;jfklds;jfkl;dsjklf;jdskl;jfkl;sdjfkl;sdjfkl;sdjfkl;asdjfl;ksdjfkl;as </p>
+              <div id="charitywriteupinfo">
+                <h2> Calgary Drop in Center </h2>
+                <p class="author">
+                  Liam Waterous
+                </p>
+              </div>
+              <div class="descriptions">
+                Cornhole quinoa mixtape lomo scenester deep v cliche post-ironic, aesthetic freegan cardigan shabby chic tattooed. Narwhal Odd Future whatever direct trade. McSweeney's flannel YOLO chillwave wayfarers. Synth occupy mumblecore, Blue Bottle keffiyeh tote bag chia bitters flexitarian swag small batch. Disrupt selfies.
+              </div>
 
             </div>
 

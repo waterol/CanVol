@@ -442,9 +442,68 @@ h1
   width:100%;
   height:100px;
 }
- 
+
+#profileimage
+{
+
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  position:relative;
+}
+#profilelogo
+{
+
+  width:100%;
+}
+#nameofprofile
+{
+  font-size: 2.5em;
+  font-size: 50px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+#profilereputation
+{
+
+  background-color: #8BC53F;
+  width:100%;
+  text-align: center;
+  color:white;
+  font-size: 1.5em;
+}
+
+#recentactivity
+{
+  width:1081px;
+  margin-left: 29px;
+
+}
+h2
+{
+  width:200px;
+  font-size: 1.5em;
+}
+.author
+{
+
+}
+.descriptions
+{
+
+  display:inline-block;
+  margin-left: 60px;
+  width:780px;
+  vertical-align: top;
+
+}
+#charitywriteupinfo
+{
+  display: inline-block;
+}
 
 /* End profile */
+
 /* Get Started */
 
 
@@ -507,8 +566,22 @@ h1
 {
   float: right;
 }
+.profileinfo
+{
+  display:inline-block;
+  font-weight: bold;
+  padding-right:15px;
+  padding-bottom: 10px;
+}
+.profileinfovalue
+{
+  display: inline-block;
+  margin-top: 5px;
+}
+
 
 /* End Charity Profile */
+
 
 
 

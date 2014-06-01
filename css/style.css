@@ -412,6 +412,8 @@ h1
 {
   border:1px #383838 solid;
   margin-top: 30px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
 }
 
 #post
@@ -429,8 +431,33 @@ h1
 {
    display: inline-block;
    vertical-align: top;
+   margin-left: 0px;
+    font-size: 1.2em;
 
 }
+
+#authorsonprofilepage
+{
+  margin-left: 60px;
+}
+#nameofauthoronprofilepage
+{
+
+
+}
+
+.nameofreviewer
+{
+  font-size: 1.5em;
+  margin-left: 30px;
+
+}
+#by
+{
+ margin-left: 80px;
+ font-size:;
+}
+
 #postright
 {
   display:inline-block;
@@ -462,6 +489,7 @@ h1
   font-size: 50px;
   line-height: 40px;
   padding-bottom: 10px;
+  margin-left: 50px;
 }
 #profilereputation
 {
@@ -473,16 +501,26 @@ h1
   font-size: 1.5em;
 }
 
+#profilecontanctinfo
+{
+
+  margin-left: 50px;
+}
+
 #recentactivity
 {
   width:1081px;
   margin-left: 29px;
+  background-color: #FFFFFF
 
 }
-h2
+#charityonprofilepagereview
 {
   width:200px;
   font-size: 1.5em;
+  border-top: -30px;
+  margin-left: 30px;
+
 }
 .author
 {
@@ -502,6 +540,30 @@ h2
   display: inline-block;
 }
 
+#picturesofsomeonevolunteering
+{
+  font-size: 2.5em;
+  margin-bottom: -50px;
+  margin-top: 30px;
+}
+#whoisblank
+{
+  font-size: 1.5em;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
+.descriptions
+{
+  margin-top: 10px;
+
+}
+
+#percentsonthecharityandtext
+{
+  margin-left: 300px;
+}
+
+
 /* End profile */
 
 /* Get Started */
@@ -520,7 +582,7 @@ h2
 }
 #charitybio
 {
-  margin-top:2%;
+  margin-top:0%;
   background-color: #FFFFFF;
   padding:10px;
   border-radius: 10px;

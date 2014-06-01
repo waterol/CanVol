@@ -25,56 +25,36 @@
         <div id="profilecontanctinfo">
           <div>
             <div id="profile-datejoined" class="profileinfo">
-              Date Joined
+              Date Joined:
             </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
-            </div>
-          </div>
-          <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Date Joined
-            </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
+            <div id="datejoinedonprofile" class="profileinfovalue">
+              June 1, 2014
             </div>
           </div>
           <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Date Joined
+            <div id="currentlyliving" class="profileinfo">
+              Currently Living in:
             </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
-            </div>
-          </div>
-          <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Date Joined
-            </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
+            <div id="currentlylivingresponse" class="profileinfovalue">
+              Calgary
             </div>
           </div>
           <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Date Joined
+            <div id="favouritecharity" class="profileinfo">
+              Favourite Charity:
             </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
+            <div id="amountofhourse" class="profileinfovalue">
+              Calgary Drop-In Center
             </div>
           </div>
           <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Date Joined
+            <div id="amountofhoursvolunteering" class="profileinfo">
+              Amount of Hours Volunteering:
             </div>
             <div id="profiledatejoinedvalue" class="profileinfovalue">
-              May 19, 2014
+              38
             </div>
           </div>
-
-
-
-
 
         </div>
 <!--
@@ -137,8 +117,13 @@
 
       <div class="col-sm-6">
           <div id="charitybio">
+        <p id="whoisblank">
+        Who is Larry Smith?
+       </p>
         <p>
-          The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
+          
+          <br>
+          Wes Anderson Portland fashion axe authentic, ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics Bushwick 90's. Bespoke gastropub 3 wolf moon, yr occupy raw denim photo booth DIY tousled Godard kale chips. Bitters irony Portland, wayfarers +1 actually pug keffiyeh pour-over
 
         </p>
 
@@ -147,19 +132,32 @@
       </div>
     </div>
 
+  <div id="picturesofsomeonevolunteering">
+    Picture of Larry Volunteering!
+  </div>
   </div>
           
-          <div id="collage">
-            <div class="item">
-              <img src="img/france1.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france2.jpg">
-            </div>
-            <div class="item">
-              <img src="img/france3.jpg">
-            </div>
+         <div id="collage">
+          <div class="item">
+            <img src="img/land1.jpg" width="200" height="200">
           </div>
+          
+          <div class="item">
+            <img src="img/land2.jpg" width="200" height="200">
+          </div>
+          <div class="item">
+            <img src="img/land3.jpg" width="200" height="200">
+          </div>           
+          <div class="item">
+            <img src="img/landvertical.jpg" width="200" height="200">
+        </div>
+        <div class="item">
+            <img src="img/land1.jpg" width="200" height="200">
+        </div>
+
+            
+      
+    </div>
        
         <div class="btn-group" id="calendarcontrol">
           <button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
@@ -176,10 +174,13 @@
                 <input type="text" name="charity" placeholder="Type a Charity...">
 
               </form>
-              <p>
-                By <br> Liam Waterous
-              </p>
-
+              <div id="authorsonprofilepage">
+                By:
+                <br> 
+              </div>
+              <div id="nameofauthoronprofilepage">
+              Liam Waterous
+              </div>
 
             </div>
             <div id="postright">
@@ -196,15 +197,32 @@
           <div id="recentactivity">
             <div class="recentactivitypost">
               <div id="charitywriteupinfo">
-                <h2> Calgary Drop in Center </h2>
-                <p class="author">
+                <div id="charityonprofilepagereview"> 
+                Calgary Drop in Center
+               </div>
+                <div id="by">
+                  By:
+                  <br>
+                </div>
+                <div class="nameofreviewer">
                   Liam Waterous
-                </p>
+                </div>
               </div>
               <div class="descriptions">
-                Cornhole quinoa mixtape lomo scenester deep v cliche post-ironic, aesthetic freegan cardigan shabby chic tattooed. Narwhal Odd Future whatever direct trade. McSweeney's flannel YOLO chillwave wayfarers. Synth occupy mumblecore, Blue Bottle keffiyeh tote bag chia bitters flexitarian swag small batch. Disrupt selfies.
+                Wes Anderson Portland fashion axe authentic, ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics 
               </div>
+              <div class="percentsonthecharityandtext">
 
+                <div class="percentonreviewtext">
+                  <p class="ratingtext">
+                    I give the Calgary Drop in Center:
+                  </p>
+                </div>
+                <div class="percentonreview">
+                48%
+                </div>
+              </div>
+            
             </div>
 
           </div>

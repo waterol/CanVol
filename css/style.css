@@ -495,7 +495,7 @@ h1
 {
 
   background-color: #8BC53F;
-  width:100%;
+
   text-align: center;
   color:white;
   font-size: 1.5em;
@@ -504,19 +504,19 @@ h1
 #profilecontanctinfo
 {
 
-  margin-left: 50px;
+  margin-left: -150px;
 }
 
 #recentactivity
 {
-  width:1081px;
-  margin-left: 29px;
+
+  margin-left: 0px;
   background-color: #FFFFFF
 
 }
 #charityonprofilepagereview
 {
-  width:200px;
+  width:0px;
   font-size: 1.5em;
   border-top: -30px;
   margin-left: 30px;
@@ -531,7 +531,7 @@ h1
 
   display:inline-block;
   margin-left: 60px;
-  width:780px;
+
   vertical-align: top;
 
 }
@@ -560,8 +560,25 @@ h1
 
 #percentsonthecharityandtext
 {
-  margin-left: 300px;
+
 }
+
+#nameofcharityandauthor
+{
+  display: inline-block;
+  width:25%;
+  margin: 0px;
+}
+
+#descriptionandpercentageofcharity
+{
+  display: inline-block;
+  width:65%;
+  margin:0px;
+  vertical-align: top;
+
+}
+
 
 
 /* End profile */
@@ -576,22 +593,27 @@ h1
 
 #charityimage
 {
-  width:100%;
+  width:60%;
   margin-top: 4%;
   border-radius: 10px;
 }
-#charitybio
+#charitybiobackground
 {
-  margin-top:0%;
+  margin-top:;
   background-color: #FFFFFF;
   padding:10px;
+  width:500px;
   border-radius: 10px;
+  margin-left: 270px;
+  margin-top: -220px;
+
 }
 #nameofcharity
 {
   font-size: 2.5em;
   margin-top: 1%;
   font-size: 50px;
+  margin-left: -150px;
 }
 #tableinformation > tbody > tr > td
 {
@@ -603,13 +625,14 @@ h1
 
 #percentagecharity
 {
-  font-size: 4em;
+  font-size: 2.5em;
   background-color: #D23988;
   width:120px;
-  height:120px;
-  border-radius: 60px;
-  padding: 10px;
-  margin-top: 35px;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-bottom: 3px;
+  margin-top: 10px;
+  margin-left: 20px;
 
 }
 #collage
@@ -639,6 +662,36 @@ h1
 {
   display: inline-block;
   margin-top: 5px;
+}
+#charityprofiletitle
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#whyustitle
+{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#charitybiowhyus
+{
+  background-color: white;
+  margin-left: 270px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width:500px;
+  padding: 10px;
+
+}
+.photosofcharitiesvolunteering
+{
+  font-size: 35px;
+  margin-bottom: -50px;
+
+}
+#insideoroutsidequestion
+{
+  font-weight: bold;
 }
 
 

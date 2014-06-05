@@ -194,35 +194,42 @@
             </div>
 
           </div>
+         
           <div id="recentactivity">
-            <div class="recentactivitypost">
-              <div id="charitywriteupinfo">
-                <div id="charityonprofilepagereview"> 
-                Calgary Drop in Center
+            <div id="nameofcharityandauthor">
+              <div class="recentactivitypost">
+                <div id="charitywriteupinfo">
+                  <div id="charityonprofilepagereview"> 
+                  Calgary Drop in Center
+                 </div>
+                  <div id="by">
+                    By:
+                    <br>
+                  </div>
+                  <div class="nameofreviewer">
+                    Liam Waterous
+                  </div>
+                </div>
                </div>
-                <div id="by">
-                  By:
-                  <br>
-                </div>
-                <div class="nameofreviewer">
-                  Liam Waterous
-                </div>
-              </div>
-              <div class="descriptions">
-                Wes Anderson Portland fashion axe authentic, ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics 
-              </div>
-              <div class="percentsonthecharityandtext">
+             </div>
 
-                <div class="percentonreviewtext">
-                  <p class="ratingtext">
-                    I give the Calgary Drop in Center:
-                  </p>
+
+              <div id="descriptionandpercentageofcharity">
+                <div class="descriptions">
+                  Wes Anderson Portland fashion axe authentic ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics 
                 </div>
-                <div class="percentonreview">
-                48%
+                <div class="percentsonthecharityandtext">
+
+                  <div class="percentonreviewtext">
+                    <p class="ratingtext">
+                      I give the Calgary Drop in Center:
+                    </p>
+                  </div>
+                  <div class="percentonreview">
+                  48%
+                  </div>
                 </div>
               </div>
-            
             </div>
 
           </div>

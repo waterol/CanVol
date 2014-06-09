@@ -6,13 +6,14 @@
 					<img id="charityimage" src="img/profilepicforfox.jpg">
 
 				</div>
-				
-				<div class="col-sm-4">
 				<div id="percentagecharity">
 
 					68%
 
 				</div>
+				
+				<div class="col-sm-4">
+				
 
 			</div>
 
@@ -23,49 +24,48 @@
 			<div id="nameofcharity">
 				Michael J. Fox
 			</div>
-	<div id="profilecontanctinfo">
-        <div>
-            <div id="profile-datejoined" class="profileinfo">
-              Link to Website:
-            </div>
-            <div id="datejoinedonprofile" class="profileinfovalue">
-              https://www.michaeljfox.org/
-            </div>
-        </div>
-        <div>
-            <div id="currentlyliving" class="profileinfo">
-              Location Nearest You:
-            </div>
-            <div id="currentlylivingresponse" class="profileinfovalue">
-              Calgary (1145 Sydenham Road)
-            </div>
-        </div>
-        <div>
-            <div id="favouritecharity" class="profileinfo">
-              Help Line:
-            </div>
-            <div id="amountofhourse" class="profileinfovalue">
-              403-Stop-Prks
-            </div>
-        </div>
-        <div>
-            <div id="amountofhoursvolunteering" class="profileinfo">
-              CEO:
-            </div>
-            <div id="profiledatejoinedvalue" class="profileinfovalue">
-              Michael J. Fox
-            </div>
-        </div>
-        <div>
-        	<div id="insideoroutsidequestion" class="profileinfovalue">
-        		Inside or Outside?
+			<div id="profilecontanctinfo">
+        		<div>
+            	<div id="profile-datejoined" class="profileinfo">
+            	  Link to Website:
+            	</div>
+            	<div id="datejoinedonprofile" class="profileinfovalue">
+              		https://www.michaeljfox.org/
+            	</div>
         	</div>
-        	<div id="insideoroutsideanswer" class="profileinfovalue">
-        		Both!
+        	<div>
+            	<div id="currentlyliving" class="profileinfo">
+              		Location Nearest You:
+            	</div>
+            	<div id="currentlylivingresponse" class="profileinfovalue">
+            	  Calgary (1145 Sydenham Road)
+            	</div>
         	</div>
-        </div>
-
-    </div>
+        	<div>
+            	<div id="favouritecharity" class="profileinfo">
+            	  Help Line:
+            	</div>
+            	<div id="amountofhourse" class="profileinfovalue">
+              		403-Stop-Prks
+            	</div>
+        	</div>
+        	<div>
+            	<div id="amountofhoursvolunteering" class="profileinfo">
+              		CEO:
+            	</div>
+            	<div id="profiledatejoinedvalue" class="profileinfovalue">
+              		Michael J. Fox
+            	</div>
+        	</div>
+        	<div>
+        		<div id="insideoroutsidequestion" class="profileinfovalue">
+        			Inside or Outside?
+        		</div>
+        		<div id="insideoroutsideanswer" class="profileinfovalue">
+        			Both!
+        		</div>
+        	</div>
+		</div>
 	    <div id="charitybiobackground">
 			<div id="charityprofiletitle">
 				Who Are We?

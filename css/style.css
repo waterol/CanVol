@@ -489,7 +489,6 @@ h1
   font-size: 50px;
   line-height: 40px;
   padding-bottom: 10px;
-  margin-left: 50px;
 }
 #profilereputation
 {
@@ -500,11 +499,16 @@ h1
   color:white;
   font-size: 1.5em;
 }
+#charitybio
+{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 #profilecontanctinfo
 {
 
-  margin-left: -150px;
 }
 
 #recentactivity
@@ -578,6 +582,67 @@ h1
   vertical-align: top;
 
 }
+
+#reviewsupercontainer
+{
+
+}
+
+.reviewcontainer
+{
+  display:block;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+ 
+}
+.reviewcontainerleft
+{
+  display:inline-block;
+  width:25%;
+  vertical-align: top;
+}
+.nameofcharityinreview
+{
+  font-size: 1.5em;
+}
+.byreview
+{
+
+}
+.reviewcontainerright
+{
+  display: inline-block;
+  width:65%;
+}
+
+.textinreview
+{
+  padding: 15px;
+}
+
+.ratingsinreview
+{
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.helpfulinreview
+{
+  border-radius: 10px;
+  float:right;
+
+}
+.nothelpfulinreview
+{
+  float: right;
+  background-color: #D23988;
+  border-radius: 10px;
+  color:white;
+  margin-left: 5px;
+
+}
+
 
 
 
@@ -697,6 +762,21 @@ h1
 
 /* End Charity Profile */
 
+/* Getting Started Page */
+  
+#sentence
+{
+  font-size: 3em;
+  margin: 100px;
+}
+
+#individualcartoon
+{
+  width:30%;
+  height:30%;
+}
+
+/* End Getting Started Page */
 
 
 

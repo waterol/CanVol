@@ -1,7 +1,7 @@
 <div class="container">
 	<div id="charityinfo">
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<div id="charitylogo">
 					<img id="charityimage" src="img/profilepicforfox.jpg">
 
@@ -11,143 +11,89 @@
 					68%
 
 				</div>
-				
-				<div class="col-sm-4">
-				
-
-			</div>
-
 			</div>
 
 			<div class="col-sm-4">
 
-			<div id="nameofcharity">
-				Michael J. Fox
+				<div id="nameofcharity">
+					Michael J. Fox
+				</div>
+				<div id="profilecontanctinfo">
+	        		
+	            	<div id="profile-datejoined" class="profileinfo">
+	            	  Link to Website:
+	            	</div>
+	            	<div id="datejoinedonprofile" class="profileinfovalue">
+	              		https://www.michaeljfox.org/
+	            	</div>
+	        	</div>
+	        	<div>
+	            	<div id="currentlyliving" class="profileinfo">
+	              		Location Nearest You:
+	            	</div>
+	            	<div id="currentlylivingresponse" class="profileinfovalue">
+	            	  Calgary (1145 Sydenham Road)
+	            	</div>
+	        	</div>
+	        	<div>
+	            	<div id="favouritecharity" class="profileinfo">
+	            	  Help Line:
+	            	</div>
+	            	<div id="amountofhourse" class="profileinfovalue">
+	              		403-Stop-Prks
+	            	</div>
+	        	</div>
+	        	<div>
+	            	<div id="amountofhoursvolunteering" class="profileinfo">
+	              		CEO:
+	            	</div>
+	            	<div id="profiledatejoinedvalue" class="profileinfovalue">
+	              		Michael J. Fox
+	            	</div>
+	        	</div>
+	        	<div>
+	        		<div id="insideoroutsidequestion" class="profileinfovalue">
+	        			Inside or Outside?
+	        		</div>
+	        		<div id="insideoroutsideanswer" class="profileinfovalue">
+	        			Both!
+	        		</div>
+	        	</div>
+	        </div>
+	    <div class="col-sm-5">
+		    <div id="charitybiobackground">
+				<div id="charityprofiletitle">
+					Who Are We?
+				</div>
+				<div id="charityprofiletext">
+					The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
+				</div>
+				
 			</div>
-			<div id="profilecontanctinfo">
-        		<div>
-            	<div id="profile-datejoined" class="profileinfo">
-            	  Link to Website:
-            	</div>
-            	<div id="datejoinedonprofile" class="profileinfovalue">
-              		https://www.michaeljfox.org/
-            	</div>
-        	</div>
-        	<div>
-            	<div id="currentlyliving" class="profileinfo">
-              		Location Nearest You:
-            	</div>
-            	<div id="currentlylivingresponse" class="profileinfovalue">
-            	  Calgary (1145 Sydenham Road)
-            	</div>
-        	</div>
-        	<div>
-            	<div id="favouritecharity" class="profileinfo">
-            	  Help Line:
-            	</div>
-            	<div id="amountofhourse" class="profileinfovalue">
-              		403-Stop-Prks
-            	</div>
-        	</div>
-        	<div>
-            	<div id="amountofhoursvolunteering" class="profileinfo">
-              		CEO:
-            	</div>
-            	<div id="profiledatejoinedvalue" class="profileinfovalue">
-              		Michael J. Fox
-            	</div>
-        	</div>
-        	<div>
-        		<div id="insideoroutsidequestion" class="profileinfovalue">
-        			Inside or Outside?
-        		</div>
-        		<div id="insideoroutsideanswer" class="profileinfovalue">
-        			Both!
-        		</div>
-        	</div>
-		</div>
-	    <div id="charitybiobackground">
-			<div id="charityprofiletitle">
-				Who Are We?
-			</div>
-			<div id="charityprofiletext">
-				The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
-			</div>
-			
-		</div>
-		<div id="charitybiowhyus">
-			<div id="whyustitle">
-				Why Volunteer for Us?
-			</div>
-			<div id="whyustext">
-				Our model is different. It is accepted practice among private disease research funders that the most important decisions — how to allocate donor-raised dollars — are made by external scientific advisors and boards. We bucked this model from day one in favor of building an in-house team of formally trained PhDs and business-trained project managers.
-			</div>
-
-		</div>
-
-	</div>
-
-				<!--
-				<div id="contactinformation">
-					<table id="tableinformation">
-						<thead>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-
-									link
-								</td>
-								<td>
-									<a href="www.michaeljfoxfoundation.com"> www.michaeljfoxjoundation.com
-									</a>
-
-								</td>
-
-							</tr>
-							<tr>
-								<td>
-									email
-								</td>
-								<td>
-
-									michael@michaeljfox.com
-								</td>
-							</tr>
-							<tr>
-								<td>
-									phone number
-								</td>
-								<td>
-
-									(403) 867-5309
-								</td>
-
-							</tr>
-							<tr>
-								<td>
-								adress
-								</td>
-
-								<td>
-									1111 Fake Street
-
-								</td>
-							</tr>
-
-						</tbody>
-
-					</table>
-
+			<div id="charitybiowhyus">
+				<div id="whyustitle">
+					Why Volunteer for Us?
+				</div>
+				<div id="whyustext">
+					Our model is different. It is accepted practice among private disease research funders that the most important decisions — how to allocate donor-raised dollars — are made by external scientific advisors and boards. We bucked this model from day one in favor of building an in-house team of formally trained PhDs and business-trained project managers.
 				</div>
 
 			</div>
-			-->
-
-			
 		</div>
-
 	</div>
+
+	<div id="writeareviewaboutcharity">
+      Write a review about us!
+    </div>
+    <textarea id="writingincharity">
+    	Type here..
+	</textarea>
+	<div id="textpost btn">
+		Post
+	</div>
+
+
+
 	<div class="photosofcharitiesvolunteering">
 		Photos of the Michael J. Fox Charity
 	</div>
@@ -185,43 +131,98 @@
 	</div>
                     
 
-	<div id="post">
-	    <div id="postleft">
-	      <form>
-	        <input type="text" name="charity" placeholder="Type a Charity...">
+	<div id="reviewsupercontainer">
+    <div class="reviewcontainer">
+      <div class="reviewcontainerleft">
+        <div class="nameofcharityinreview">
+          Calgary Reads
+        </div>
+        <div class="byreview">
+          By:
+        </div>
+        <div class="nameofreviewer">
+          Liam Waterous
+        </div>
 
-	      </form>
-	      <p>
-	        By <br> Liam Waterous
-	      </p>
+      </div>
+      
+      <div class="reviewcontainerright">
+        <div class="experienceinreview">
+          The Experience:
 
+        </div>
 
-	    </div>
-	    <div id="postright">
-	      <form>
+        <div class="textinreview">
+          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
 
-	        <textarea id="posttext"> </textarea>
+        </div>
+        <div class="ratingsinreview">
+          Rating: 
 
+        </div>
+        <div class="percentageinreview">
+          93%
+        </div>
+        <div class ="nothelpfulinreview btn">
+          Not Helpful?
 
-	      </form>
+        </div>
+        <div class="helpfulinreview btn btn-primary">
+          Helpful?
 
-	    </div>
+        </div>
 
-	  </div>
-	  <div id="recentactivity">
-	    <div class="recentactivitypost">
-	      <h2> Calgary Drop in Center </h2>
-	      <p> ajksdl;fja;lksdjf;alksdjf;laksjd;lkajf;lkasjd;lfkj;lasdkjfl;kdsjaf;lkjsdf;klsjflk;sdjkl;fjdskljfl;ksdjfkljsdkl;jfklds;jfkl;dsjklf;jdskl;jfkl;sdjfkl;sdjfkl;sdjfkl;asdjfl;ksdjfkl;as </p>
+        
+      <div>
 
-	    </div>
+    </div>
 
-	  </div>
+  </div>
+  <div id="reviewsupercontainer">
+    <div class="reviewcontainer">
+      <div class="reviewcontainerleft">
+        <div class="nameofcharityinreview">
+          Calgary Reads
+        </div>
+        <div class="byreview">
+          By:
+        </div>
+        <div class="nameofreviewer">
+          Liam Waterous
+        </div>
 
+      </div>
+      
+      <div class="reviewcontainerright">
+        <div class="experienceinreview">
+          The Experience:
 
+        </div>
 
-	</div>
+        <div class="textinreview">
+          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
 
+        </div>
+        <div class="ratingsinreview">
+          Rating: 
 
+        </div>
+        <div class="percentageinreview">
+          93%
+        </div>
+        <div class ="nothelpfulinreview btn">
+          Not Helpful?
 
+        </div>
+        <div class="helpfulinreview btn btn-primary">
+          Helpful?
 
+        </div>
+
+        
+      <div>
+
+    </div>
+
+  </div>
 </div>

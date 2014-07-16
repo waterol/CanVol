@@ -50,6 +50,14 @@
             <div id="profiledatejoinedvalue" class="profileinfovalue">
               38
             </div>
+            <br>
+            <div id="ageinprofile">
+            Age:
+            </div>
+            <div id="ageinprofileanswer">
+            14
+            </div>
+
           </div>
         </div>
       </div>
@@ -61,12 +69,22 @@
           <p id="whoisblank">
             Who is Larry Smith?
           </p>
+          <br>
           <p>
            Wes Anderson Portland fashion axe authentic, ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics Bushwick 90's. Bespoke gastropub 3 wolf moon, yr occupy raw denim photo booth DIY tousled Godard kale chips. Bitters irony Portland, wayfarers +1 actually pug keffiyeh pour-over
           </p>
         </div>
       </div>
     </div>
+
+    
+
+
+
+
+
+
+
 
     <div id="picturesofsomeonevolunteering">
      Picture of Larry Volunteering!
@@ -100,7 +118,9 @@
   <div id="calendar">
 
   </div>
-
+  <div id="reviewtitleinprofile">
+    Larry's Reviews:
+  </div>
 
   <div id="reviewsupercontainer">
     <div class="reviewcontainer">
@@ -118,14 +138,68 @@
       </div>
       
       <div class="reviewcontainerright">
+        <div class="experienceinreview">
+          The Experience:
+
+        </div>
 
         <div class="textinreview">
           Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
 
         </div>
         <div class="ratingsinreview">
-          Rating: 93%
+          Rating: 
 
+        </div>
+        <div class="percentageinreview">
+          93%
+        </div>
+        <div class ="nothelpfulinreview btn">
+          Not Helpful?
+
+        </div>
+        <div class="helpfulinreview btn btn-primary">
+          Helpful?
+
+        </div>
+
+        
+      <div>
+
+    </div>
+
+  </div>
+  <div id="reviewsupercontainer">
+    <div class="reviewcontainer">
+      <div class="reviewcontainerleft">
+        <div class="nameofcharityinreview">
+          Calgary Reads
+        </div>
+        <div class="byreview">
+          By:
+        </div>
+        <div class="nameofreviewer">
+          Liam Waterous
+        </div>
+
+      </div>
+      
+      <div class="reviewcontainerright">
+        <div class="experienceinreview">
+          The Experience:
+
+        </div>
+
+        <div class="textinreview">
+          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
+
+        </div>
+        <div class="ratingsinreview">
+          Rating: 
+
+        </div>
+        <div class="percentageinreview">
+          93%
         </div>
         <div class ="nothelpfulinreview btn">
           Not Helpful?

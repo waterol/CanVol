@@ -792,6 +792,27 @@ h1
 {
   font-weight: bold;
 }
+#writingincharity
+{
+  display:inline-block;
+
+}
+#writeareviewaboutcharity
+{
+  font-size: 2.0em;
+ 
+
+}
+.textpost
+{
+  display:inline-block;
+  width:110px;
+  font-size: 1.5em;
+  margin-bottom: 45px;
+  margin-left: 10px;
+
+
+}
 
 
 /* End Charity Profile */

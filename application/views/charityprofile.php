@@ -85,10 +85,10 @@
 	<div id="writeareviewaboutcharity">
       Write a review about us!
     </div>
-    <textarea id="writingincharity">
-    	Type here..
-	</textarea>
-	<div id="textpost btn">
+    <div id="writingincharity">
+   		<textarea  placeholder="Type here..."></textarea>
+   	</div>
+	<div class="textpost btn btn-primary">
 		Post
 	</div>
 

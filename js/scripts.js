@@ -13,6 +13,14 @@
 
 	});
 
+    tinyMCE.init({
+        selector: "textarea"
+
+
+
+
+    });
+
     if($('#calendar').length > 0)
     {
     	var calendar = $("#calendar").calendar(

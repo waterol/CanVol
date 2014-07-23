@@ -1,0 +1,50 @@
+volunteer
+	id (primary key)
+	firstname
+	lastname
+	datejoined
+	location
+	favouritecharity (foreign key: charity)
+	description
+
+charity
+	id (primary key)
+	name
+	helpline
+	ceo
+	insideoroutside
+	description
+	pitchline
+
+charityreview
+	id (primary key)
+	volunteerid (foreign key: volunteer)
+	charityid (foreign key: charity)
+	datestamp
+	rating
+	review
+
+charityevent
+	id (primary key)
+	charityid (foreign key: charity)
+	datestamp
+	title
+	description
+	
+volunteereventregistration
+	id (primary key)
+	volunteerid (foreign key: volunteer)
+	charityeventid (foreign key: charityevent)
+
+user
+	id (primary key)
+	volunteerid (foreign key: volunteer)
+	username
+	password
+	salt
+
+blog
+	id (primary key)
+	title
+	timestamp
+	blogtext

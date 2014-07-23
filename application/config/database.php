@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'tophatandmonocle';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
@@ -63,6 +63,22 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+$db['tophatandmonocle']['hostname'] = 'mysql.canvol.tophatandmonocle.com';
+$db['tophatandmonocle']['username'] = 'canvol';
+$db['tophatandmonocle']['password'] = 'canvol_git_pw_change_me';
+$db['tophatandmonocle']['database'] = 'canvol_db';
+$db['tophatandmonocle']['dbdriver'] = 'mysql';
+$db['tophatandmonocle']['dbprefix'] = '';
+$db['tophatandmonocle']['pconnect'] = TRUE;
+$db['tophatandmonocle']['db_debug'] = TRUE;
+$db['tophatandmonocle']['cache_on'] = FALSE;
+$db['tophatandmonocle']['cachedir'] = '';
+$db['tophatandmonocle']['char_set'] = 'utf8';
+$db['tophatandmonocle']['dbcollat'] = 'utf8_general_ci';
+$db['tophatandmonocle']['swap_pre'] = '';
+$db['tophatandmonocle']['autoinit'] = TRUE;
+$db['tophatandmonocle']['stricton'] = FALSE;
 
 
 /* End of file database.php */

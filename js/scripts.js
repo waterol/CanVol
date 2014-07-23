@@ -13,13 +13,7 @@
 
 	});
 
-    tinyMCE.init({
-        selector: "textarea"
-
-
-
-
-    });
+    
 
     if($('#calendar').length > 0)
     {

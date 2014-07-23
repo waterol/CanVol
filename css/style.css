@@ -603,7 +603,10 @@ h1
   background-color: white;
   border-radius: 10px;
   margin-top: 20px;
-  height:165px;
+  margin-bottom: 50px;
+  padding:10px;
+
+
  
 }
 .reviewcontainerleft
@@ -731,8 +734,7 @@ h1
   padding-left: 30px;
   padding-bottom: 3px;
   margin-top: 10px;
-  margin-left: 20px;
-
+  margin-left:50px;
 }
 #collage
 {
@@ -795,6 +797,7 @@ h1
 #writingincharity
 {
   display:inline-block;
+  width:70%;
 
 }
 #writeareviewaboutcharity
@@ -813,26 +816,222 @@ h1
 
 
 }
+#writeareviewcharity
+{
+  width:100%;
+  height:150px;
+  border-radius: 20px;
+}
 
 
 /* End Charity Profile */
 
 /* Getting Started Page */
-  
-#sentence
+#gettingstartedindividual
 {
-  font-size: 3em;
-  margin: 100px;
+  width:100%;
 }
 
-#individualcartoon
+.whatiscanvolgettingstarted
 {
-  width:30%;
-  height:30%;
+  background-color: #428BCA;
+  width:95%;
+  height:;
+  color:white;
+  margin-top: 40px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
+#openerquestionleft
+{
+  display: inline-block;
+  font-size: 4.5em;
+  font-family:"Gochi Hand", verdana, sarif;
+  width:45%;
+  margin-left: 10px;
+}
+
+#openerquestionright
+{
+  display: inline-block;
+  width:45%;
+  font-size: 1.5em;
+  margin-left:;
+  vertical-align: top;
+  margin-top: 20px;
+}
+#secondslideindividual
+{
+  background-color: #D23988;
+  width:95%;
+  height:;
+  margin-top: 70px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+#secondindividualleft
+{
+  font-size: 4em;
+  font-family:"Gochi Hand", verdana, sarif;
+  color:white;
+  margin-left: 10px;
+  display: inline-block;
+  width:45%;
+}
+#secondindividualright
+{
+  font-size: 1.5em;
+  color:white;
+  width:45%;
+  display:inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+#getvolunteering
+{
+  background-color: #8BC53F;
+  border:none;
+  width:25%;
+  height:40px;
+  margin: 0 auto;
+  display:table;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
 
 /* End Getting Started Page */
 
+/* Start Browse Charities Page */
+#browsecharitiespage
+{
+  margin-bottom: 30px;
+}
+#idealcharityforyou
+{
+  font-size: 2.5em;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+.filterdropdowns
+{
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.browsecharitiescharities
+{
+  background-color: white;
+  border-radius: 10px;
+  width:50%;
+  height:110px;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+.browsecharitiesleft >img
+{
+  width:83%;
+  padding-top: 10px;
+  padding-left: 7px;
+
+}
+.browsecharitiesleft
+{
+  width:150px;
+  height:100%;
+  display: inline-block;
+}
+.browsecharitiesright
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+.titleinbrowsecharities
+{
+  font-size: 2em;
+  margin: 0;
+
+}
+.addressinbrowsecharities
+{
+ font-size: 1em;
+}
+.ratingsinbrowsecharities
+{
+  border-radius: 10px;
+  background-color: #D23988;
+  color:white;
+  font-size: 1.4em;
+  padding: 1px;
+  padding-left: 5px;
+  display:inline-block;
+}
+.reviewsinbrowsecharities
+{
+  display: inline-block;
+  margin-left:5px;
+  background-color: #428bca;
+  border-radius: 10px;
+  font-size: 1.4em;
+  color: white;
+  padding:1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+
+}
+#sortonbrowsecharities
+{
+  margin-left: 100px;
+}
+
+
+/* End Browse Charities Page */
+
+/* Start Sign Up Page */
+
+#canvoler
+{
+  font-size: 2.5em;
+  margin: 20px;
+}
+.signuplabel
+{
+  font-size: 1.3em;
+  margin-left: 20px;
+ 
+}
+.signupinput
+{
+  border-radius: 10px;
+}
+#yearandquadrant
+{
+  margin-top:30px;
+}
+#yearofbirthsignup
+{
+  width:90px;
+}
+
+#quadrantsignup
+{
+  width:100px;
+  height:15px;
+}
+
+
+
+/* End Sign Up Page */
 
 
 /* Media block mobile */
@@ -850,6 +1049,14 @@ h1
   .hugeicon
   {
     margin-top: 40px;
+  }
+  .reviewcontainerleft
+  {
+    display: block;
+  }
+  .reviewcontainerright
+  {
+    display: block;
   }
 
 }

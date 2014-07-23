@@ -24,7 +24,9 @@
 	            	  Link to Website:
 	            	</div>
 	            	<div id="datejoinedonprofile" class="profileinfovalue">
-	              		https://www.michaeljfox.org/
+	              		<a href="https://www.michaeljfox.org">
+	              			https://www.michaeljfox.org
+	              		</a>
 	            	</div>
 	        	</div>
 	        	<div>
@@ -86,7 +88,7 @@
       Write a review about us!
     </div>
     <div id="writingincharity">
-   		<textarea  placeholder="Type here..."></textarea>
+   		<textarea id="writeareviewcharity" placeholder="Type here..."></textarea>
    	</div>
 	<div class="textpost btn btn-primary">
 		Post
@@ -132,53 +134,50 @@
                     
 
 	<div id="reviewsupercontainer">
-    <div class="reviewcontainer">
-      <div class="reviewcontainerleft">
-        <div class="nameofcharityinreview">
-          Calgary Reads
-        </div>
-        <div class="byreview">
-          By:
-        </div>
-        <div class="nameofreviewer">
-          Liam Waterous
-        </div>
+	    <div class="reviewcontainer">
+	      <div class="reviewcontainerleft">
+	        <div class="nameofcharityinreview">
+	          Calgary Reads
+	        </div>
+	        <div class="byreview">
+	          By:
+	        </div>
+	        <div class="nameofreviewer">
+	          Liam Waterous
+	        </div>
 
-      </div>
-      
-      <div class="reviewcontainerright">
-        <div class="experienceinreview">
-          The Experience:
+	      </div>
+	      
+	      <div class="reviewcontainerright">
+	        <div class="experienceinreview">
+	          The Experience:
 
-        </div>
+	        </div>
 
-        <div class="textinreview">
-          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
+	        <div class="textinreview">
+	          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
 
-        </div>
-        <div class="ratingsinreview">
-          Rating: 
+	        </div>
+	        <div class="ratingsinreview">
+	          Rating: 
 
-        </div>
-        <div class="percentageinreview">
-          93%
-        </div>
-        <div class ="nothelpfulinreview btn">
-          Not Helpful?
+	        </div>
+	        <div class="percentageinreview">
+	          93%
+	        </div>
+	        <div class ="nothelpfulinreview btn">
+	          Not Helpful?
 
-        </div>
-        <div class="helpfulinreview btn btn-primary">
-          Helpful?
+	        </div>
+	        <div class="helpfulinreview btn btn-primary">
+	          Helpful?
 
-        </div>
+	        </div>
 
-        
-      <div>
+	    </div>
 
-    </div>
+  	</div>
 
-  </div>
-  <div id="reviewsupercontainer">
     <div class="reviewcontainer">
       <div class="reviewcontainerleft">
         <div class="nameofcharityinreview">

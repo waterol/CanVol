@@ -8,9 +8,9 @@
     <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/calendar.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?=base_url() ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url() ?>css/calendar.css" rel="stylesheet">
+    <link href="<?=base_url() ?>css/style.css" rel="stylesheet">
 
     <script>
       var config = {
@@ -34,10 +34,10 @@
           <span id="identity"> CanVol.org </span>
         </div>
         <div class="toprowright" id="logincolumn">
-          <form class="form-horizontal">
+          <?=form_open("login/dologin", array("class" => "form-horizontal")) ?>
             <fieldset>
             <div id="usernameandpassword">
-                  <input id="username" name="username" type="text" placeholder="Username" class="logintext" required="">
+                  <input id="username" name="username" type="text" placeholder="Email" class="logintext" required="">
      
                   <input id="password" name="password" type="password" placeholder="Password" class="logintext" required="">
 
@@ -45,11 +45,11 @@
 
             <!-- Button -->
             <div  id="loginbutton">
-              <button id="Login" name="Login" class="btn btn-primary btn-xs">Log In</button>
+              <button id="Login" name="Login" class="btn btn-primary btn-xs" type="submit">Log In</button>
             </div>
 
             <div  id="signupbutton">
-              <button id="signup" name="signup" class="btn btn-primary btn-xs">Sign Up!</button>
+              <button id="signup" name="signup" class="btn btn-primary btn-xs" type="button">Sign Up!</button>
             </div>
            
            

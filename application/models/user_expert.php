@@ -13,7 +13,36 @@ class User_expert extends CI_Model
 		$hashed = $this->hash_password($password, $salt);
 
 		$sql = "INSERT INTO `user` (`id`,  `volunteerid`, `username`, `password`, `salt`) VALUES (NULL, ?, ?, ?, ?)";
-		$this->db->query($sql, array($volunteerid, $username, $password, $salt));
+		$this->db->query($sql, array($volunteerid, $username, $hashed, $salt));
+	}
+
+	public function authenticate_user($username, $password)
+	{
+		$sql = "SELECT DISTINCT `salt` FROM `user` WHERE `username` = ?";
+		$result = $this->db->query($sql, array($username));
+
+		if($result->num_rows() != 1)
+		{
+			return NULL;
+		}
+
+		$rdata = $result->result_array();
+
+		$salt = $rdata[0]['salt'];
+
+		$hashed = $this->hash_password($password, $salt);
+
+		$sql = "select `id`, `username`, `volunteerid` from `user` WHERE `username` = ? AND `password` = ?";
+		
+		$result = $this->db->query($sql, array($username, $hashed));
+
+		if($result->num_rows() == 1)
+		{
+			return $result->result_array();
+		}
+
+		return NULL;
+
 	}
 
 	private function make_salt()
@@ -28,6 +57,8 @@ class User_expert extends CI_Model
 
 		return $password;
 	}
+
+
 
 }
 

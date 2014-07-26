@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Register extends MY_Controller {
+class Login extends MY_Controller {
 
 	public function __construct() {        
     	parent::__construct();
@@ -8,23 +8,17 @@ class Register extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('register');
+		$this->loadview('login');
 	}
 
-	public function doregister()
+	public function dologin()
 	{
-		$registersuccess = false;
-
 		// process form
 
-
 		$this->load->model("User_expert");
-		$this->User_expert->register_user("sean", "examplepassword");
+		$result = $this->User_expert->authenticate_user("sean", "examplepassword");
 
-		if($registersuccess)
-		{
-
-		}
+		print_r($result);
 
 	}
 	

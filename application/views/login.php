@@ -1,8 +1,11 @@
 <div class="jumbotron">
-	<h1>Login</h1>
+	
+	<h1 style="margin-bottom:30px">Login</h1>
+
 	<?php if(isset($loginerror)): ?>
 		<div class="alert alert-danger"><?=$loginerror ?></div>
 	<?php endif ?>
+
 	<?=form_open("login/dologin") ?>
 
 		<div>

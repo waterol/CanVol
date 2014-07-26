@@ -8,13 +8,13 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/responsiveslides.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/underscore-min.js"> </script>
-    <script src="js/calendar.js"></script>
-    <script src="js/tinymce/tinymce.min.js"></script>
-    <script src="js/scripts.js"> </script>
+    <script src="<?=base_url() ?>js/bootstrap.min.js"></script>
+    <script src="<?=base_url() ?>js/responsiveslides.js"></script>
+    <script src="<?=base_url() ?>js/isotope.min.js"></script>
+    <script src="<?=base_url() ?>js/underscore-min.js"> </script>
+    <script src="<?=base_url() ?>js/calendar.js"></script>
+    <script src="<?=base_url() ?>js/tinymce/tinymce.min.js"></script>
+    <script src="<?=base_url() ?>js/scripts.js"> </script>
 
 
   </body>

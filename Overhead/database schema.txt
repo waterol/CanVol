@@ -38,13 +38,12 @@ volunteereventregistration
 
 user
 	id (primary key)
-	volunteerid (foreign key: volunteer)
+	volunteerid (foreign key: volunteer, NULL)
 	username
 	password
 	salt
 
-blog
+charityowner
 	id (primary key)
-	title
-	timestamp
-	blogtext
+	user (foreign key)
+	charity (foreign key)

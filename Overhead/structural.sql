@@ -7,24 +7,25 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 CREATE TABLE IF NOT EXISTS `charity` (
-  `id` int(11) NOT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `helpline` varchar(50) NOT NULL,
   `ceo` varchar(255) NOT NULL,
   `insideoroutside` bit(2) NOT NULL,
   `description` text NOT NULL,
-  `pitchline` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `pitchline` varchar(255) NOT NULL,
+  PRIMARY KEY ('id')
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 
 CREATE TABLE IF NOT EXISTS `charityevent` (
-  `id` int(10) unsigned NOT NULL DEFAULT '0',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `charityid` int(11) NOT NULL,
   `datestamp` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
 CREATE TABLE IF NOT EXISTS `charityowner` (
@@ -48,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `charityreview` (
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `volunteerid` int(11) NOT NULL,
+  `volunteerid` int(11) NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `salt` varchar(255) NOT NULL,

@@ -13,6 +13,7 @@
     <script src="<?=base_url() ?>js/isotope.min.js"></script>
     <script src="<?=base_url() ?>js/underscore-min.js"> </script>
     <script src="<?=base_url() ?>js/calendar.js"></script>
+    <script src="<?=base_url() ?>js/passfield.min.js"></script>
     <script src="<?=base_url() ?>js/tinymce/tinymce.min.js"></script>
     <script src="<?=base_url() ?>js/scripts.js"> </script>
 

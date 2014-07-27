@@ -38,6 +38,13 @@
         });
     }
 
+    if($('#password_signup').length > 0)
+    {
+        $('#password_signup').passField({
+            checkMode: PassField.CheckModes.MODERATE
+            });
+    }
+
 });
 
 

@@ -9,6 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="<?=base_url() ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url() ?>css/passfield.min.css" rel="stylesheet">
     <link href="<?=base_url() ?>css/calendar.css" rel="stylesheet">
     <link href="<?=base_url() ?>css/style.css" rel="stylesheet">
 

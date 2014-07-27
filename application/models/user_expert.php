@@ -47,7 +47,7 @@ class User_expert extends CI_Model
 
 	private function make_salt()
 	{
-		return openssl_random_pseudo_bytes(16);
+		return mcrypt_create_iv( 16, MCRYPT_DEV_URANDOM);
 	}
 
 	private function hash_password($password, $salt)

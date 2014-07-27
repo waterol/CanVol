@@ -42,6 +42,7 @@ user
 	username
 	password
 	salt
+	emailvalidated
 
 charityowner
 	id (primary key)

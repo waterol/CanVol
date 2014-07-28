@@ -36,14 +36,14 @@ class User_expert extends CI_Model
 
 		$cipher = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $pkey, $email, MCRYPT_MODE_CBC, $iv);
 
-		return urlencode(base64_encode($iv . $cipher));
+		return rawurlencode(base64_encode($iv . $cipher));
 	}
 
 	public function decrypt_email($cipher)
 	{
 		$key = get_email_crypt_key();
 
-		$cipher = urldecode($cipher);
+		//$cipher = urldecode($cipher);
 
 		$pkey = pack('H*', $key);
 
@@ -86,6 +86,12 @@ class User_expert extends CI_Model
 
 		return NULL;
 
+	}
+
+	public function activate_account($email)
+	{
+		$sql = "UPDATE `user` SET `emailvalidated` = 1 WHERE `username` = ?";
+		$this->db->query($sql, array($email));
 	}
 
 	public function check_username_available($username)

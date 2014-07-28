@@ -16,6 +16,49 @@ class User_expert extends CI_Model
 		$this->db->query($sql, array($volunteerid, $username, $hashed, $salt));
 	}
 
+	function create_volunteer($firstname, $lastname, $location)
+	{
+		$sql = "INSERT INTO `volunteer` (`id`, `firstname`, `lastname`, `datejoined`, `location`) VALUES (NULL, ?, ?, ?, ?)";
+		$this->db->query($sql, array($firstname, $lastname, time(), $location));
+
+		return $this->db->insert_id();
+
+	}
+
+	public function crypt_email($email)
+	{
+		$key = get_email_crypt_key();
+
+		$pkey = pack('H*', $key);
+
+		$iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+    	$iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+
+		$cipher = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $pkey, $email, MCRYPT_MODE_CBC, $iv);
+
+		return urlencode(base64_encode($iv . $cipher));
+	}
+
+	public function decrypt_email($cipher)
+	{
+		$key = get_email_crypt_key();
+
+		$cipher = urldecode($cipher);
+
+		$pkey = pack('H*', $key);
+
+		$cipher_raw = base64_decode($cipher);
+
+		$iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+		$iv_dec = substr($cipher_raw, 0, $iv_size);
+
+		$cipher_raw = substr($cipher_raw, $iv_size);
+
+		return mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $pkey, $cipher_raw, MCRYPT_MODE_CBC, $iv_dec);
+
+
+	}
+
 	public function authenticate_user($username, $password)
 	{
 		$sql = "SELECT DISTINCT `salt` FROM `user` WHERE `username` = ?";
@@ -43,6 +86,16 @@ class User_expert extends CI_Model
 
 		return NULL;
 
+	}
+
+	public function check_username_available($username)
+	{
+		$sql = "SELECT DISTINCT `id` FROM `user` WHERE `username` = ?";
+		$result = $this->db->query($sql, array($username));
+
+		if($result->num_rows() > 0)
+			return false;
+		return true;
 	}
 
 	private function make_salt()

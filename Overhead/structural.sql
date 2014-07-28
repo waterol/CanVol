@@ -1,10 +1,6 @@
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
+SET AUTOCOMMIT=0;
+START TRANSACTION;
 
 CREATE TABLE IF NOT EXISTS `charity` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -14,9 +10,8 @@ CREATE TABLE IF NOT EXISTS `charity` (
   `insideoroutside` bit(2) NOT NULL,
   `description` text NOT NULL,
   `pitchline` varchar(255) NOT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
-
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 CREATE TABLE IF NOT EXISTS `charityevent` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -27,14 +22,12 @@ CREATE TABLE IF NOT EXISTS `charityevent` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
-
 CREATE TABLE IF NOT EXISTS `charityowner` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` int(11) NOT NULL,
   `charityid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
 
 CREATE TABLE IF NOT EXISTS `charityreview` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -46,16 +39,15 @@ CREATE TABLE IF NOT EXISTS `charityreview` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
-
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `volunteerid` int(11) NULL,
+  `volunteerid` int(11) DEFAULT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `salt` varchar(255) NOT NULL,
+  `salt` blob NOT NULL,
+  `emailvalidated` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 CREATE TABLE IF NOT EXISTS `volunteer` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -63,11 +55,10 @@ CREATE TABLE IF NOT EXISTS `volunteer` (
   `lastname` varchar(255) NOT NULL,
   `datejoined` int(11) NOT NULL,
   `location` varchar(255) NOT NULL,
-  `description` text NOT NULL,
-  `favouritecharity` int(11) NOT NULL,
+  `description` text,
+  `favouritecharity` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
 
 CREATE TABLE IF NOT EXISTS `volunteereventregistration` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -75,4 +66,4 @@ CREATE TABLE IF NOT EXISTS `volunteereventregistration` (
   `charityeventid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
+COMMIT;

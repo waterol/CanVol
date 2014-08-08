@@ -1,8 +1,8 @@
 
     <div id="slides">
       <ul class="rslides">
-        <li><img src="<?=base_url() ?>img/test.jpg" alt=""></li>
-        <li><img src="<?=base_url() ?>img/test4.jpg" alt=""></li>
+        <li><img src="<?=base_url() ?>img/runningfox.png" alt=""></li>
+        <li><img src="<?=base_url() ?>img/humanesocietybest.png" alt=""></li>
       </ul>
 
       <div id="slidetext">

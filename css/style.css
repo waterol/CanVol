@@ -1035,11 +1035,41 @@ h1
 }
 
 
-
-
-
 /* End Sign Up Page */
+/* Start Login Page */
 
+#usernameinlogin
+{
+  border-radius: 10px;
+  width:250px;
+  height:30px;
+
+}
+#passwordinlogin
+{
+  border-radius: 10px;
+  width:250px;
+  height:30px;
+}
+#logininformation
+{
+  display:inline-block;
+  width:500px;
+
+}
+
+#logininlogin
+{
+  display: inline-block;
+  float:middle;
+  width:500px;
+}
+
+
+
+
+
+/* End Login Page */
 
 /* Media block mobile */
 @media (max-width: 767px){

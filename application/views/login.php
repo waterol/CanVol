@@ -1,5 +1,5 @@
 <div class="jumbotron">
-	
+	<?=form_open("login/dologin") ?>
 	<div id="logininlogin">
 		<h1 style="margin-bottom:30px">Login</h1>
 	</div>
@@ -7,7 +7,7 @@
 		<div class="alert alert-danger"><?=$loginerror ?></div>
 	<?php endif ?>
 
-	<?=form_open("login/dologin") ?>
+	
 
 		<div id="logininformation">
 			<div>

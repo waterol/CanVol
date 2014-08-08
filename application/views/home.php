@@ -8,7 +8,7 @@
       <div id="slidetext">
         <p id="st-leader">CanVol</p>
         <p id="st-follower">A Local Charity Network for Youth</p>
-        <button class="btn btn-large btn-primary">Get Started</button>
+        <a href="<?=base_url() ?>gettingstartedindividual" id="getstartedbutton" class="btn btn-large btn-primary">Get Started</a>
       </div>
 
     </div>
@@ -18,7 +18,7 @@
         <input id="searchwide" name="search" type="text" placeholder="Search for Charities, People etc." class="input-sm search" required="">
       </div>
       <div id="browsebutton">
-        <button id="browsecharities" name="signup"> Browse Charities!</button>
+        <button onclick="location.href='<?=base_url() ?>browsecharities'" id="browsecharities" name="signup"> Browse Charities!</button>
       </div>
 
       <div id="topexplain">How it works...</div>

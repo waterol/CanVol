@@ -38,7 +38,7 @@
 
 
 
-	<div class="browsecharitiescharities">
+	<a href="<?=base_url() ?>charityprofile" id="charitylink"> <div class="browsecharitiescharities">
 
 		<div class="browsecharitiesleft">
 			<img src="img/profilepicforfox.jpg">
@@ -56,12 +56,10 @@
 				Reviews: 56
 			</p> 
 
-		
-
-
 		</div>
 
 	</div>
+</a>
 	<div class="browsecharitiescharities">
 
 		<div class="browsecharitiesleft">

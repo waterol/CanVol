@@ -32,8 +32,8 @@
     <div>
       <div id="toprow">
         <div class="toprowleft">
-          <span id="identity"> CanVol.org </span>
-        </div>
+          <span id="identity"> <a href="<?=base_url() ?>"> CanVol.org </a> </span>
+                 </div>
         <div class="toprowright" id="logincolumn">
           <?=form_open("login/dologin", array("class" => "form-horizontal")) ?>
             <fieldset>
@@ -50,7 +50,7 @@
             </div>
 
             <div  id="signupbutton">
-              <button id="signup" name="signup" class="btn btn-primary btn-xs" type="button">Sign Up!</button>
+              <button onclick="location.href='<?=base_url() ?>signup'" id="signup" name="signup" class="btn btn-primary btn-xs" type="button">Sign Up!</button>
             </div>
            
            

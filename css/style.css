@@ -1129,6 +1129,58 @@ h1
 
 /* End Login Page */
 
+/*Start Success Page */
+
+  #signupsuccess
+  {
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    padding:1px;
+  }
+  #congratsinsuccess
+  {
+    font-size: 4em;
+  }
+  #certifiedinsucess
+  {
+    font-size: 3em;
+  }
+  #browsingcanvolinsuccess
+  {
+    font-size: 1.5em;
+
+  }
+  #successinsuccess
+  {
+    margin: 30px;
+  }
+  #browseinsuccess
+  {
+    background-color: #428BCA;
+    vertical-align: top;
+    float:right;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 80px;
+    margin-top: 30px;
+    
+  }
+  #homeinsuccess
+  {
+    background-color: #D23988;
+    vertical-align: top;
+    float:right;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 51px;
+    margin-top: 30px; 
+    width:178px;
+  }
+
+
+/* End Success Page*/
+
 /* Media block mobile */
 @media (max-width: 767px){
   #logincolumn

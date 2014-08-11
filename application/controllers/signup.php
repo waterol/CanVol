@@ -108,7 +108,7 @@ class Signup extends MY_Controller {
 
 	public function username_available($username)
 	{
-		if(!check_username_availble($username))
+		if(!$this->User_expert->check_username_available($username))
 		{
 			$this->form_validation->set_message('email', 'Sorry, this e-mail is already in use. If this is you, you might need to recover your account.');
 			return false;

@@ -111,6 +111,8 @@ $autoload['language'] = array();
 
 $autoload['model'] = array();
 
+// Set date timezone
+date_default_timezone_set("America/Edmonton");
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */

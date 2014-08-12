@@ -16,7 +16,7 @@
 
       <div class="col-sm-4">
         <div id="nameofprofile">
-          Larry Smith
+          <?=$profile['firstname'] ?> <?=$profile['lastname'] ?>
         </div>
         <div id="profilecontanctinfo">
           <div>
@@ -40,7 +40,7 @@
               Favourite Charity:
             </div>
             <div id="amountofhourse" class="profileinfovalue">
-              Calgary Drop-In Center
+              <?=$profile['charityname'] ?>
             </div>
           </div>
           <div>
@@ -50,13 +50,7 @@
             <div id="profiledatejoinedvalue" class="profileinfovalue">
               38
             </div>
-            <br>
-            <div id="ageinprofile">
-            Age:
-            </div>
-            <div id="ageinprofileanswer">
-            14
-            </div>
+
 
           </div>
         </div>
@@ -67,12 +61,12 @@
       <div class="col-sm-6">
         <div id="charitybio">
           <p id="whoisblank">
-            Who is Larry Smith?
+            Who is <?=$profile['firstname'] ?> <?=$profile['lastname'] ?>?
           </p>
           <br>
           <p>
-           Wes Anderson Portland fashion axe authentic, ugh pop-up tousled Williamsburg 90's tattooed. Drinking vinegar next level pork belly, Thundercats literally ennui pickled mlkshk hashtag craft beer raw denim deep v. Typewriter Truffaut American Apparel cray, Neutra kogi High Life asymmetrical Pitchfork before they sold out wayfarers. Kitsch cliche squid cornhole slow-carb. 3 wolf moon iPhone Pitchfork semiotics Bushwick 90's. Bespoke gastropub 3 wolf moon, yr occupy raw denim photo booth DIY tousled Godard kale chips. Bitters irony Portland, wayfarers +1 actually pug keffiyeh pour-over
-          </p>
+           <?=$profile['description'] ?>
+         </p>
         </div>
       </div>
     </div>
@@ -87,7 +81,7 @@
 
 
     <div id="picturesofsomeonevolunteering">
-     Picture of Larry Volunteering!
+     Picture of <?=$profile['firstname'] ?> Volunteering!
     </div>
   </div>  
   <div id="collage">

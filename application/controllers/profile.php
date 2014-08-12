@@ -21,7 +21,7 @@ class Profile extends MY_Controller {
 		$profile = $this->Volunteer_expert->get_profile($id);
 
 		if($profile != null)
-			$data['profile'] = $profile;
+			$this->data['profile'] = $profile[0];
 		else
 		{
 			redirect(base_url());

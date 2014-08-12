@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-2">
         <div id="profilelogo">
-          <img id="profileimage" src="img/portrait.png">
+          <img id="profileimage" src="<?=base_url() ?>img/portrait.png">
         </div>
         <div id="profilereputation">
           6,093 pts.
@@ -92,20 +92,20 @@
   </div>  
   <div id="collage">
       <div class="item">
-        <img src="img/land1.jpg" width="200" height="200">
+        <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
       </div>
       
       <div class="item">
-        <img src="img/land2.jpg" width="200" height="200">
+        <img src="<?=base_url() ?>img/land2.jpg" width="200" height="200">
       </div>
       <div class="item">
-        <img src="img/land3.jpg" width="200" height="200">
+        <img src="<?=base_url() ?>img/land3.jpg" width="200" height="200">
       </div>           
       <div class="item">
-        <img src="img/landvertical.jpg" width="200" height="200">
+        <img src="<?=base_url() ?>img/landvertical.jpg" width="200" height="200">
       </div>
       <div class="item">
-        <img src="img/land1.jpg" width="200" height="200">
+        <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
       </div>
   </div>
        

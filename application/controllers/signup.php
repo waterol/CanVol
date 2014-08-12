@@ -37,7 +37,7 @@ class Signup extends MY_Controller {
 		}
 
 		// perform registration
-		$volunteerid = $this->User_expert->register_user($_POST['firstname'], $_POST['lastname'], $_POST['quadrant']);
+		$volunteerid = $this->User_expert->create_volunteer($_POST['firstname'], $_POST['lastname'], $_POST['quadrant']);
 
 		$this->User_expert->register_user($_POST['email'], $_POST['password'], $volunteerid);
 

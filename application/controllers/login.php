@@ -33,10 +33,13 @@ class Login extends MY_Controller {
 
 		if($result != NULL)
 		{
-			echo("<p>The login was successful ^_^</p><p>Normally, I would redirect you to your profile...</p>");
+			$_SESSION['userid'] = $result[0]['id'];
+			$_SESSION['email'] = $result[0]['username'];
+			$_SESSION['volunteerid'] = $result[0]['volunteerid'];
 
-			echo("<p>Logged in user details:</p>");
-			print_r($result);
+			session_write_close();
+			
+			redirect(base_url());
 		}
 		else
 		{
@@ -45,6 +48,14 @@ class Login extends MY_Controller {
 			return;
 		}
 
+	}
+
+	public function logout()
+	{
+		$_SESSION = Array();
+		session_write_close();
+
+		redirect(base_url());
 	}
 	
 }

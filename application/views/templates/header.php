@@ -28,13 +28,17 @@
     <![endif]-->
   </head>
   <body>
-    
     <div>
       <div id="toprow">
         <div class="toprowleft">
           <span id="identity"> <a href="<?=base_url() ?>"> CanVol.org </a> </span>
                  </div>
         <div class="toprowright" id="logincolumn">
+          <?php if(array_key_exists('userid', $_SESSION)): ?>
+            Welcome <?=$_SESSION['email'] ?>
+            <a href="<?=base_url() ?>login/logout">(Log Out)</a>
+
+          <?php else: ?>
           <?=form_open("login/dologin", array("class" => "form-horizontal")) ?>
             <fieldset>
             <div id="usernameandpassword">
@@ -57,6 +61,7 @@
 
             </fieldset>
             </form>
+          <?php endif ?>
 
         </div>
     

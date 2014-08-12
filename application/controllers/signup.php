@@ -48,7 +48,7 @@ class Signup extends MY_Controller {
 		$this->load->library('email');
 
 		$emailmodel['firstname'] = $_POST['firstname'];
-		$emailmodel['activatelink'] = base_url() . "signup/activate/?k=" . $this->user_expert->crypt_email($_POST['email']);
+		$emailmodel['activatelink'] = base_url() . "signup/activate/?k=" . $this->User_expert->crypt_email($_POST['email']);
 
 
 		$config['useragent'] = 'canvol.org';
@@ -110,7 +110,7 @@ class Signup extends MY_Controller {
 	{
 		if(!$this->User_expert->check_username_available($username))
 		{
-			$this->form_validation->set_message('email', 'Sorry, this e-mail is already in use. If this is you, you might need to recover your account.');
+			$this->form_validation->set_message('username_available', 'Sorry, this e-mail is already in use. If this is you, you might need to recover your account.');
 			return false;
 		}
 

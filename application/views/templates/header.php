@@ -35,10 +35,12 @@
                  </div>
         <div class="toprowright" id="logincolumn">
           <?php if(array_key_exists('userid', $_SESSION)): ?>
-            Welcome <?=$_SESSION['email'] ?>
+
+            Welcome <?=$_SESSION['firstname'] ?>
             <a href="<?=base_url() ?>login/logout">(Log Out)</a>
 
           <?php else: ?>
+
           <?=form_open("login/dologin", array("class" => "form-horizontal")) ?>
             <fieldset>
             <div id="usernameandpassword">
@@ -61,6 +63,7 @@
 
             </fieldset>
             </form>
+
           <?php endif ?>
 
         </div>

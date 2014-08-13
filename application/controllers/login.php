@@ -36,6 +36,7 @@ class Login extends MY_Controller {
 			$_SESSION['userid'] = $result[0]['id'];
 			$_SESSION['email'] = $result[0]['username'];
 			$_SESSION['volunteerid'] = $result[0]['volunteerid'];
+			$_SESSION['firstname'] = $result[0]['firstname'];
 
 			session_write_close();
 			

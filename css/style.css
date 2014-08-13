@@ -1184,6 +1184,46 @@ h1
 
 /* End Success Page*/
 
+/*Start Activated */
+
+#activatedonprofile
+{
+    background-color: #428BCA;
+    vertical-align: top;
+    float:right;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+#activatedpage
+{
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+}
+#activatedtext
+{
+  font-size: 4em;
+  margin-left: 20px;
+}
+
+#activatedonprofile
+{
+  float:right;
+  vertical-align: top;
+}
+
+#detailsofactivated
+{
+  font-size: 1.5em;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+/* End Activated */
+
 /* Media block mobile */
 @media (max-width: 767px){
   #logincolumn

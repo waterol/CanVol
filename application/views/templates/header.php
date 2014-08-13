@@ -42,7 +42,7 @@
               </div>
               
               <div class="col-sm-6">
-                 <button onclick="location.href='<?=base_url() ?>profile'" id="yourprofileonhome" class="btn">
+                 <button onclick="location.href='<?=base_url() ?>profile/<?=$_SESSION['volunteerid'] ?>" id="yourprofileonhome" class="btn">
                   Your Profile
                 </button>
                 <button onclick="location.href='<?=base_url() ?>login/logout'" id="loginlogoutonhome" class="btn">

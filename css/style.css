@@ -136,6 +136,21 @@ h1
 {
 	vertical-align: middle;
 }
+#yourprofileonhome
+{
+  background-color: #428bca;
+  color: white; 
+}
+#loginlogoutonhome
+{
+  background-color: #D23988;
+  color:white;
+}
+#welcomeprofile
+{
+  font-size: 1.5em;
+  color: white;
+}
 /* End Top Login Area */
 
 /* Call to action area */
@@ -1223,6 +1238,8 @@ h1
 }
 
 /* End Activated */
+
+
 
 /* Media block mobile */
 @media (max-width: 767px){

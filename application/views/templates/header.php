@@ -35,9 +35,23 @@
                  </div>
         <div class="toprowright" id="logincolumn">
           <?php if(array_key_exists('userid', $_SESSION)): ?>
+           
+            <div class="row">
+              <div class="col-sm-6" id="welcomeprofile">
+                Welcome <?=$_SESSION['firstname'] ?>!
+              </div>
+              
+              <div class="col-sm-6">
+                 <button onclick="location.href='<?=base_url() ?>profile'" id="yourprofileonhome" class="btn">
+                  Your Profile
+                </button>
+                <button onclick="location.href='<?=base_url() ?>login/logout'" id="loginlogoutonhome" class="btn">
+                  Logout
+                </button>
 
-            Welcome <?=$_SESSION['firstname'] ?>
-            <a href="<?=base_url() ?>login/logout">(Log Out)</a>
+              </div>
+               
+            </div>
 
           <?php else: ?>
 

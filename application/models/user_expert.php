@@ -75,7 +75,7 @@ class User_expert extends CI_Model
 
 		$hashed = $this->hash_password($password, $salt);
 
-		$sql = "select distinct `id`, `username`, `volunteerid`, `volunteer`.`firstname` from `user` join `volunteer` ON `user`.`volunteerid` = `volunteer`.`id` WHERE `username` = ? AND `password` = ?";
+		$sql = "select distinct `user`.`id`, `username`, `volunteerid`, `volunteer`.`firstname` from `user` join `volunteer` ON `user`.`volunteerid` = `volunteer`.`id` WHERE `username` = ? AND `password` = ?";
 		
 		$result = $this->db->query($sql, array($username, $hashed));
 

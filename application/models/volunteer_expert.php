@@ -9,7 +9,7 @@ class Volunteer_expert extends CI_Model
 
 	function get_profile($id)
 	{
-		$sql = "select DISTINCT volunteer.id as id, volunteer.firstname, volunteer.lastname, volunteer.datejoined, volunteer.location, volunteer.description, user.username, charity.name as charityname, charity.id as charityid from volunteer JOIN user on volunteer.id = user.volunteerid JOIN charity on volunteer.favouritecharity = charity.id WHERE volunteer.id = ?";
+		$sql = "select DISTINCT volunteer.id as id, volunteer.firstname, volunteer.lastname, volunteer.datejoined, volunteer.location, volunteer.description, user.username, charity.name as charityname, charity.id as charityid from volunteer JOIN user on volunteer.id = user.volunteerid LEFT JOIN charity on volunteer.favouritecharity = charity.id WHERE volunteer.id = ?";
 
 		$result = $this->db->query($sql, $id);
 

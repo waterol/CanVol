@@ -27,6 +27,10 @@ class Profile extends MY_Controller {
 			redirect(base_url());
 			exit();
 		}
+		
+		$this->data['profile']['location'] = $this->Volunteer_expert->transform_location($this->data['profile']['location']);
+
+		$this->data['profile']['stars'] = $this->Volunteer_expert->get_score($id);
 
 		$this->loadview('profile', $this->data);
 	}

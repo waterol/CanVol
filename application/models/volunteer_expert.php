@@ -22,4 +22,39 @@ class Volunteer_expert extends CI_Model
 
 	}
 
+	function get_score($volunteerid)
+	{
+		$sql = "SELECT count(DISTINCT `charityreviewstar`.`id`) as stars FROM `charityreviewstar` JOIN `charityreview` ON `charityreview`.`id` = `charityreviewstar`.`charityreviewid` WHERE `charityreview`.`volunteerid` = ?";
+
+		$result = $this->db->query($sql, $volunteerid);
+
+		if($result->num_rows() == 1)
+		{
+			$arr = $result->result_array();
+			return $arr[0]['stars'];
+		}
+
+		return 0;
+	}
+
+	function transform_location($location)
+	{
+		switch($location)
+		{
+			case "nw":
+				return "NorthWest";
+			case "sw":
+				return "SouthWest";
+			case "ne":
+				return "NorthEast";
+			case "se":
+				return "SouthEast";
+			case "downtown":
+				return "Downtown";
+
+		}
+
+
+	}
+
 }

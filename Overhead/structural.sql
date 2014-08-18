@@ -66,4 +66,11 @@ CREATE TABLE IF NOT EXISTS `volunteereventregistration` (
   `charityeventid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `canvol_db`.`charityreviewstar` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`charityreviewid` INT NOT NULL ,
+`volunteerid` INT NOT NULL
+) ENGINE = MYISAM ;
+
 COMMIT;

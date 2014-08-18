@@ -6,7 +6,7 @@
           <img id="profileimage" src="<?=base_url() ?>img/portrait.png">
         </div>
         <div id="profilereputation">
-          6,093 pts.
+          <?=$profile['stars'] ?> Stars.
 
         </div>
       </div>
@@ -24,7 +24,7 @@
               Date Joined:
             </div>
             <div id="datejoinedonprofile" class="profileinfovalue">
-              June 1, 2014
+              <?=Date('F n, Y', $profile['datejoined']) ?>
             </div>
           </div>
           <div>
@@ -32,7 +32,7 @@
               Currently Living in:
             </div>
             <div id="currentlylivingresponse" class="profileinfovalue">
-              Calgary
+              <?=$profile['location'] ?>
             </div>
           </div>
           <div>

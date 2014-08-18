@@ -32,6 +32,11 @@ class Profile extends MY_Controller {
 
 		$this->data['profile']['stars'] = $this->Volunteer_expert->get_score($id);
 
+		if(file_exists("userimages/profileimage/" . $id .".jpg"))
+			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $id . ".jpg";
+		else
+			$this->data['profile']['portraitpath'] = "img/defaultportrait.png";
+
 		$this->loadview('profile', $this->data);
 	}
 }

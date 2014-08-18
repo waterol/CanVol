@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-sm-2">
         <div id="profilelogo">
-          <img id="profileimage" src="<?=base_url() ?>img/portrait.png">
+          <img id="profileimage" src="<?=base_url() ?><?=$profile['portraitpath'] ?>">
         </div>
         <div id="profilereputation">
-          <?=$profile['stars'] ?> Stars.
+          <?=$profile['stars'] ?> Stars
 
         </div>
       </div>
@@ -71,14 +71,6 @@
       </div>
     </div>
 
-    
-
-
-
-
-
-
-
 
     <div id="picturesofsomeonevolunteering">
      Picture of <?=$profile['firstname'] ?> Volunteering!
@@ -113,7 +105,7 @@
 
   </div>
   <div id="reviewtitleinprofile">
-    Larry's Reviews:
+    <?=$profile['firstname'] ?>'s Reviews:
   </div>
 
   <div id="reviewsupercontainer">

@@ -1,13 +1,14 @@
-<form>
+<?=form_open("profileedit/save", array("class" => "form-horizontal", "role" => "form")) ?>
+  <input type="hidden" name="id" value="<?=$profile['id'] ?>">
   <div class="container">
     <div id="profiletop">
       <div class="row">
         <div class="col-sm-2">
           <div id="profilelogo">
-            <img id="profileimage" src="<?=base_url() ?>img/portrait.png">
+            <img id="profileimage" src="<?=base_url() ?><?=$profile['portraitpath'] ?>">
           </div>
           <div id="profilereputation">
-          6,093 pts.
+          <?=$profile['stars'] ?> Stars
 
           </div>
         </div>
@@ -33,7 +34,7 @@
                 Currently Living in:
               </div>
               <div id="currentlylivingresponse" class="profileinfovalue">
-                <select name="quadrant" class="form-control">
+                <select name="quadrant">
                   <option value="ne" <?=set_select('quadrant', 'ne'); ?>> NE </option>
                   <option value="nw" <?=set_select('quadrant', 'nw'); ?>> NW </option>
                   <option value="se" <?=set_select('quadrant', 'se'); ?>> SE </option>
@@ -86,12 +87,11 @@
               Who is <?=$profile['firstname'] ?> <?=$profile['lastname'] ?>?
             </p>
             <br>
-            <textarea id="descriptiononprofile" name="description">
-            </textarea>
+            <textarea id="descriptiononprofile" name="description"><?=$profile['description'] ?></textarea>
           </div>
           <div id="editbuttononcharity">
             <button onclick="location.href='<?=base_url() ?>'" id="buttonprofile" class="btn">
-              Edit
+              Save
             </button>
           </div>
         </div>
@@ -139,7 +139,7 @@
 
     </div>
     <div id="reviewtitleinprofile">
-      Larry's Reviews:
+      <?=$profile['firstname'] ?>'s Reviews:
     </div>
 
     <div id="reviewsupercontainer">

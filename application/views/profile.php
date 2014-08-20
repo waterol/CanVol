@@ -40,7 +40,7 @@
               Favourite Charity:
             </div>
             <div id="amountofhourse" class="profileinfovalue">
-              <?=$profile['charityname'] ?>
+              <a href="<?=base_url() ?>charity/<?=$profile['charityid'] ?>"><?=$profile['charityname'] ?></a>
             </div>
           </div>
           <div>

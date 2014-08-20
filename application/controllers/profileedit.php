@@ -8,6 +8,7 @@ class Profileedit extends MY_Controller {
     	parent::__construct();
 
     	$this->load->model("Volunteer_expert");
+    	$this->load->model("Charity_expert");
 	}
 
 	public function index($id)
@@ -15,6 +16,12 @@ class Profileedit extends MY_Controller {
 		if($id == 0)
 		{
 			redirect(base_url());
+			exit();
+		}
+
+		if($_SESSION['volunteerid'] != $id)
+		{
+			redirect(base_url() . "profile/" . $id);
 			exit();
 		}
 
@@ -27,6 +34,8 @@ class Profileedit extends MY_Controller {
 			redirect(base_url());
 			exit();
 		}
+
+		$this->data['charities'] = $this->Charity_expert->get_all_charities();
 		
 		$this->data['profile']['location'] = $this->Volunteer_expert->transform_location($this->data['profile']['location']);
 

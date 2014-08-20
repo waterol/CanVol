@@ -68,6 +68,15 @@
            <?=$profile['description'] ?>
          </p>
         </div>
+
+        <div id="editbutton" class="margin-top-20">
+          <?php if($_SESSION['volunteerid'] == $profile['id']): ?>
+
+            <button class="btn btn-primary" onclick="location.href='<?=base_url() ?>profileedit/<?=$_SESSION['volunteerid'] ?>'">Edit Profile</button>
+
+          <?php endif ?>
+
+        </div>
       </div>
     </div>
 

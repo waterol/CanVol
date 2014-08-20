@@ -35,11 +35,12 @@
               </div>
               <div id="currentlylivingresponse" class="profileinfovalue">
                 <select name="quadrant">
-                  <option value="ne" <?=set_select('quadrant', 'ne'); ?>> NE </option>
-                  <option value="nw" <?=set_select('quadrant', 'nw'); ?>> NW </option>
-                  <option value="se" <?=set_select('quadrant', 'se'); ?>> SE </option>
-                  <option value="sw" <?=set_select('quadrant', 'sw'); ?>> SW </option>
-                  <option value="downtown" <?=set_select('quadrant', 'downtown'); ?>> Downtown </option>
+                  <?php $location = $profile['location']; ?>
+                  <option value="ne" <?=pick_select($location, 'ne'); ?>> NE </option>
+                  <option value="nw" <?=pick_select($location, 'nw'); ?>> NW </option>
+                  <option value="se" <?=pick_select($location, 'se'); ?>> SE </option>
+                  <option value="sw" <?=pick_select($location, 'sw'); ?>> SW </option>
+                  <option value="downtown" <?=pick_select($location, 'downtown'); ?>> Downtown </option>
 
                 </select>
               </div>
@@ -53,15 +54,14 @@
                   <option value="pleaseselect">
                   Please Select
                   </option>
-                  <option value="calgaryreads">
-                  Calgary Reads
+                  <?php foreach($charities as $charity): ?>
+
+                  <option value="<?=$charity['id'] ?>" <?php if($charity['id'] == $profile['charityid']): ?>selected<?php endif ?>>
+                    <?=$charity['name'] ?>
                   </option>
-                  <option value="interfaithfoodbank">
-                  Calgary Interfaith Food Bank
-                  </option>
-                  <option value="parkinsonalberta">
-                  Parkinsons Alberta
-                  </option>
+
+                  <?php endforeach ?>
+
 
                 </select>
               </div>
@@ -78,9 +78,7 @@
             </div>
           </div>
         </div>
-
-
-
+        
         <div class="col-sm-6">
           <div id="charitybio">
             <p id="whoisblank">
@@ -89,8 +87,8 @@
             <br>
             <textarea id="descriptiononprofile" name="description"><?=$profile['description'] ?></textarea>
           </div>
-          <div id="editbuttononcharity">
-            <button onclick="location.href='<?=base_url() ?>'" id="buttonprofile" class="btn">
+          <div class="margin-top-20">
+            <button onclick="location.href='<?=base_url() ?>'" class="btn btn-primary">
               Save
             </button>
           </div>

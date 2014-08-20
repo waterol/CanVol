@@ -842,7 +842,7 @@ h1
 .photosofcharitiesvolunteering
 {
   font-size: 35px;
-  margin-bottom: -50px;
+  margin-bottom: 
 
 }
 #insideoroutsidequestion
@@ -857,8 +857,7 @@ h1
 }
 #writeareviewaboutcharity
 {
-  font-size: 2.0em;
- 
+  font-size: 2.0em; 
 
 }
 .textpost
@@ -886,6 +885,7 @@ h1
 {
   width:100%;
 }
+
 
 .whatiscanvolgettingstarted
 {

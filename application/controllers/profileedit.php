@@ -37,8 +37,6 @@ class Profileedit extends MY_Controller {
 
 		$this->data['charities'] = $this->Charity_expert->get_all_charities();
 		
-		$this->data['profile']['location'] = $this->Volunteer_expert->transform_location($this->data['profile']['location']);
-
 		$this->data['profile']['stars'] = $this->Volunteer_expert->get_score($id);
 
 		if(file_exists("userimages/profileimage/" . $id .".jpg"))
@@ -51,6 +49,22 @@ class Profileedit extends MY_Controller {
 
 	public function save()
 	{
+		// assemble results from POST to look more organized
+		$save['location'] = $_POST['location'];
+		$save['description'] = $_POST['description'];
+		$save['favouritecharity'] = $_POST['charityname'];
+
+		$this->Volunteer_expert->update($_SESSION['volunteerid'], $save);
+
+		redirect(base_url() . "profile/" . $_SESSION['volunteerid']);
 
 	}
 }
+
+
+
+
+
+
+
+

@@ -37,6 +37,13 @@ class Volunteer_expert extends CI_Model
 		return 0;
 	}
 
+	function update($id, $savedata)
+	{
+		$this->db->where('id', $id);
+		$this->db->update('volunteer', $savedata); 
+
+	}
+
 	function transform_location($location)
 	{
 		switch($location)

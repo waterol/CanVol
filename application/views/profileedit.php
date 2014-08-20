@@ -26,21 +26,20 @@
                 Date Joined:
               </div>
               <div id="datejoinedonprofile" class="profileinfovalue">
-                June 1, 2014
+                <?=Date('F n, Y', $profile['datejoined']) ?>
               </div>
             </div>
             <div>
               <div id="currentlyliving" class="profileinfo">
-                Currently Living in:
+                Currently Living in: 
               </div>
               <div id="currentlylivingresponse" class="profileinfovalue">
-                <select name="quadrant">
-                  <?php $location = $profile['location']; ?>
-                  <option value="ne" <?=pick_select($location, 'ne'); ?>> NE </option>
-                  <option value="nw" <?=pick_select($location, 'nw'); ?>> NW </option>
-                  <option value="se" <?=pick_select($location, 'se'); ?>> SE </option>
-                  <option value="sw" <?=pick_select($location, 'sw'); ?>> SW </option>
-                  <option value="downtown" <?=pick_select($location, 'downtown'); ?>> Downtown </option>
+                <select name="location">
+                  <option value="ne" <?=pick_select($profile['location'], 'ne'); ?>> NE </option>
+                  <option value="nw" <?=pick_select($profile['location'], 'nw'); ?>> NW </option>
+                  <option value="se" <?=pick_select($profile['location'], 'se'); ?>> SE </option>
+                  <option value="sw" <?=pick_select($profile['location'], 'sw'); ?>> SW </option>
+                  <option value="downtown" <?=pick_select($profile['location'], 'downtown'); ?>> Downtown </option>
 
                 </select>
               </div>
@@ -78,7 +77,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-sm-6">
           <div id="charitybio">
             <p id="whoisblank">

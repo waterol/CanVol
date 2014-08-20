@@ -1259,6 +1259,32 @@ h1
 
 /* End Activated */
 
+/* Start Create Charity */
+
+  #createcharityeasy
+  {
+    font-size: 3em;
+    margin: 20px;
+  }
+  #charitynameincreate
+  {
+    font-size: 1.3em;
+    float:left: 15px;
+    display:inline-block;
+  }
+  #charitynameincreate
+  {
+    width:400px;
+    margin-left: 40px;
+    display:inline-block;
+  }
+
+  #completeregistrationincreate
+  {
+    width:200px;
+    margin: 50px;
+  }
+/* End Create Charity */
 
 
 /* Media block mobile */

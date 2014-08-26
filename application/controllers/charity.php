@@ -4,7 +4,7 @@ class Charity extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('charityprofile');
+		$this->loadview('charity');
 	}
 
 	public function generateCalendar()

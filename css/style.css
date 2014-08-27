@@ -888,6 +888,31 @@ label
   border-radius: 20px;
 }
 
+#textareaincharityedit
+{
+  width:100%;
+  height:100px;
+}
+#secondtextareacharity
+{
+  width:100%;
+  height: 100px;
+}
+#dropdownsincharity
+{
+  vertical-align: top;
+  margin:0;
+  font-size: 1.1em;
+
+}
+.textareainaddress
+{
+  height:20px;
+  width:200px;
+  padding:0;
+  margin-top:5px;
+}
+
 
 /* End Charity Profile */
 

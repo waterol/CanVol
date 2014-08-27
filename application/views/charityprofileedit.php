@@ -28,14 +28,16 @@
 	              			
 	              		</a>
 	            	</div>
+	            	<textarea class="textareainaddress"> </textarea>
 	        	</div>
 	        	<div>
 	            	<div id="currentlyliving" class="profileinfo">
-	              		Location Nearest You:
+	              		Address
 	            	</div>
 	            	<div id="currentlylivingresponse" class="profileinfovalue">
 	            	  
 	            	</div>
+	            	<textarea class="textareainaddress"> </textarea>
 	        	</div>
 	        	<div>
 	            	<div id="favouritecharity" class="profileinfo">
@@ -44,22 +46,17 @@
 	            	<div id="amountofhourse" class="profileinfovalue">
 	              		
 	            	</div>
+	            	<textarea class="textareainaddress"> </textarea>
 	        	</div>
 	        	<div>
-	            	<div id="amountofhoursvolunteering" class="profileinfo">
-	              		CEO:
-	            	</div>
-	            	<div id="profiledatejoinedvalue" class="profileinfovalue">
-	              		
-	            	</div>
-	        	</div>
-	        	<div>
-	        		<div id="insideoroutsidequestion" class="profileinfovalue">
-	        			Inside or Outside?
-	        		</div>
-	        		<div id="insideoroutsideanswer" class="profileinfovalue">
-	        			
-	        		</div>
+	        	<select class="filterdropdowns" name="charityfocus" id="dropdownsincharity">
+					<option value="charityfocus"> Charity Focus </option>
+					<option value="humanitarian"> Humanitarian </option>
+					<option value="animal"> Animal </option>
+					<option value="research"> Research </option>
+					<option value="other"> Other </option>
+				</select>
+
 	        	</div>
 	        </div>
 	    <div class="col-sm-5">
@@ -70,6 +67,7 @@
 				<div id="charityprofiletext">
 				
 				</div>
+				<textarea id="textareaincharityedit"> </textarea>
 				
 			</div>
 			<div id="charitybiowhyus">
@@ -79,7 +77,7 @@
 				<div id="whyustext">
 				
 				</div>
-
+				<textarea id="secondtextareacharity"></textarea>
 			</div>
 		</div>
 	</div>

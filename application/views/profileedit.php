@@ -1,4 +1,3 @@
-<?=form_open("profileedit/save", array("class" => "form-horizontal", "role" => "form")) ?>
   <input type="hidden" name="id" value="<?=$profile['id'] ?>">
   <div class="container">
     <div id="profiletop">
@@ -9,11 +8,17 @@
           </div>
           <div id="profilereputation">
           <?=$profile['stars'] ?> Stars
-
+          </div>
+          <div id="changeprofilepicturelink">
+            <?=form_open("profileedit/updateportrait", array("class" => "form-horizontal", "role" => "form", "id"=>"pupdate", "enctype"=>"multipart/form-data")) ?>
+              <p>Change Profile Image:</p>
+              <input type="file" name="newportrait" onchange="$('#pupdate').submit()">
+              <input type="submit" style="display:none;">
+            </form>
           </div>
         </div>
 
-
+        <?=form_open("profileedit/save", array("class" => "form-horizontal", "role" => "form")) ?>
 
 
         <div class="col-sm-4">

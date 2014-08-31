@@ -25,7 +25,17 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
-		$profile = $this->Charity_expert->get_profile($id);
+		$_SESSION['currentcharity'] = $id;
+
+		$this->loaddata();
+
+
+		$this->loadview('charity', $this->data);
+	}
+
+	private function loaddata()
+	{
+		$profile = $this->Charity_expert->get_profile($_SESSION['currentcharity']);
 
 		if($profile != null)
 			$this->data['profile'] = $profile[0];
@@ -35,18 +45,22 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
-		if(file_exists("userimages/charityprofileimage/" . $id .".jpg"))
-			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $id . ".jpg";
+		if(file_exists("userimages/charityprofileimage/" . $_SESSION['currentcharity'] .".jpg"))
+			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $_SESSION['currentcharity'] . ".jpg";
 		else
 			$this->data['profile']['portraitpath'] = "img/defaultcharityportrait.png";
 
-		$this->data['profile']['rating'] = $this->Charity_expert->get_score($id);
+		$this->data['profile']['rating'] = $this->Charity_expert->get_score($_SESSION['currentcharity']);
 
 
-		$_SESSION['currentcharity'] = $id;
 
+		if(array_key_exists('message', $_SESSION))
+		{
+			$this->data['message'] = $_SESSION['message'];
+			
+			unset($_SESSION['message']);
+		}
 
-		$this->loadview('charity', $this->data);
 	}
 
 	public function generateCalendar()
@@ -64,7 +78,19 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
-		// review, rating, hours
+		// Validation
+		$this->form_validation->set_rules('rating', 'Rating', 'trim|required|xss_clean|greater_than[-1]|less_than[5]');
+		$this->form_validation->set_rules('review', 'Review', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('hours', 'Hours', 'trim|required|xss_clean|greater_than[-1]|less_than[500]');
+
+		if ($this->form_validation->run() == FALSE)
+		{
+			$this->loaddata();
+			$this->loadview('charity', $this->data);
+			return;
+		}
+
+		// Data loading
 		$reviewdata['volunteerid'] = $_SESSION['volunteerid'];
 		$reviewdata['charityid'] = $_SESSION['currentcharity'];
 		$reviewdata['datestamp'] = time();
@@ -73,6 +99,8 @@ class Charity extends MY_Controller {
 		$reviewdata['hours'] = $_POST['hours'];
 
 		$this->Charity_expert->applyreview($reviewdata);
+
+		$_SESSION['message'] = "Review Posted!";
 
 		redirect(base_url() . "charity/" . $_SESSION['currentcharity']);
 		

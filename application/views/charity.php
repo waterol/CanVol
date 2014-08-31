@@ -89,24 +89,35 @@
 	<div id="writeareviewaboutcharity">
       Write a review about us!
     </div>
+
+	<?php if(isset($message)): ?>
+		<div class="alert alert-success alert-dismissable"><a href="#" class="close" data-dismiss="alert">×</a> <?=$message ?></div>
+	<?php endif ?>
+	<?php 
+		$verrors = validation_errors();
+		if($verrors != ""): 
+	?>
+		<div class="alert alert-warning alert-dismissable"><a href="#" class="close" data-dismiss="alert">×</a> <?=$verrors ?></div>
+	<?php endif ?>
+
     <div id="writingincharity">
-   		<textarea id="writeareviewcharity" name="review" placeholder="Type here..."></textarea>
+   		<textarea id="writeareviewcharity" name="review" placeholder="Type here..."><?=set_value('review'); ?></textarea>
    	</div>
    	
    	<div id="ratingincharity">
    		Rate Your Experience 
    		<select id="charitynumericrating" name="rating">
-   			<option value="4">Great!</option>
-   			<option value="3">Good</option>
-   			<option value="2">Fair</option>
-   			<option value="1">Poor</option>
-   			<option value="0">Avoid!</option>
+   			<option value="4" <?=set_select('rating', '4', TRUE); ?>>Great!</option>
+   			<option value="3" <?=set_select('rating', '3'); ?>>Good</option>
+   			<option value="2" <?=set_select('rating', '2'); ?>>Fair</option>
+   			<option value="1" <?=set_select('rating', '1'); ?>>Poor</option>
+   			<option value="0" <?=set_select('rating', '0'); ?>>Avoid!</option>
    		</select>
    	</div>
    	
    	<div id="hoursvolunteered">
    		How many hours did you volunteer? 
-   		<input type="text" id="hoursvolunteer" name="hours"> hours
+   		<input type="text" id="hoursvolunteer" name="hours" value="<?=set_value('hours'); ?>"> hours
    	</div>
 
 	<button class="textpost btn btn-primary" type="submit">

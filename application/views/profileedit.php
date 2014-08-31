@@ -26,7 +26,7 @@
                 Date Joined:
               </div>
               <div id="datejoinedonprofile" class="profileinfovalue">
-                <?=Date('F n, Y', $profile['datejoined']) ?>
+                <?=Date('F j, Y', $profile['datejoined']) ?>
               </div>
             </div>
             <div>

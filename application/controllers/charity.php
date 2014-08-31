@@ -10,11 +10,18 @@ class Charity extends MY_Controller {
     	$this->load->model("Charity_expert");
 	}
 
-	public function index($id)
+	public function index($id = 0)
 	{
-    	if($id == 0)
+    	if($id == 0 && !array_key_exists('currentcharity', $_SESSION))
 		{
 			redirect(base_url());
+			exit();
+		}
+
+		if($id == 0 && array_key_exists('currentcharity', $_SESSION))
+		{
+			//  Want to update browser URL instead of just setting the variable
+			redirect(base_url() . "charity/" . $_SESSION['currentcharity']);
 			exit();
 		}
 
@@ -28,12 +35,37 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
+		if(file_exists("userimages/charityprofileimage/" . $id .".jpg"))
+			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $id . ".jpg";
+		else
+			$this->data['profile']['portraitpath'] = "img/defaultcharityportrait.png";
+
+		$this->data['profile']['rating'] = $this->Charity_expert->get_score($id);
+
+
+		$_SESSION['currentcharity'] = $id;
+
+
 		$this->loadview('charity', $this->data);
 	}
 
 	public function generateCalendar()
 	{
 		$this->load->view('democalendar');
+		
+	}
+
+	public function doReview()
+	{
+		// can't review a charity without first visiting it
+    	if(!array_key_exists('currentcharity', $_SESSION))
+		{
+			redirect(base_url());
+			exit();
+		}
+
+
+
 		
 	}
 }

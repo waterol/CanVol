@@ -10,11 +10,16 @@ class Profile extends MY_Controller {
     	$this->load->model("Volunteer_expert");
 	}
 
-	public function index($id)
+	public function index($id = 0)
 	{
-		if($id == 0)
+		if($id == 0 && array_key_exists('volunteerid', $_SESSION))
 		{
-			redirect(base_url());
+			$id = $_SESSION['volunteerid'];
+		}
+
+		if($id == 0 && !array_key_exists('volunteerid', $_SESSION))
+		{
+			redirect(base_url() . "login");
 			exit();
 		}
 

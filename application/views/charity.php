@@ -1,15 +1,14 @@
-<?=print_r($profile) ?>
 <div class="container">
 	<div id="charityinfo">
 		<div class="row">
 			<div class="col-sm-3">
 				<div id="charitylogo">
-					<img id="charityimage" src="img/profilepicforfox.jpg">
+					<img id="charityimage" src="<?=base_url() ?><?=$profile['portraitpath'] ?>">
 
 				</div>
 				<div id="percentagecharity">
 
-					68%
+					<?=$profile['rating'] ?>%
 
 				</div>
 			</div>
@@ -85,15 +84,36 @@
 		</div>
 	</div>
 
+	<?=form_open("charity/doreview", array("class" => "form-horizontal", "role" => "form")) ?>
+
 	<div id="writeareviewaboutcharity">
       Write a review about us!
     </div>
     <div id="writingincharity">
    		<textarea id="writeareviewcharity" placeholder="Type here..."></textarea>
    	</div>
-	<div class="textpost btn btn-primary">
+   	
+   	<div id="ratingincharity">
+   		Rate Your Experience 
+   		<select id="charitynumericrating" name="rating">
+   			<option value="4">Great!</option>
+   			<option value="3">Good</option>
+   			<option value="2">Fair</option>
+   			<option value="1">Poor</option>
+   			<option value="0">Avoid!</option>
+   		</select>
+   	</div>
+   	
+   	<div id="hoursvolunteered">
+   		How many hours did you volunteer? 
+   		<input type="text" id="hoursvolunteer" name="hours"> hours
+   	</div>
+
+	<button class="textpost btn btn-primary" type="submit">
 		Post
-	</div>
+	</button>
+
+	</form>
 
 
 	<div id="collage">

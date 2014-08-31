@@ -35,4 +35,11 @@ class Charity_expert extends CI_Model
 		return null;
 	}
 
+	function get_score($id)
+	{
+		// do some maths
+		return 80;
+
+	}
+
 }

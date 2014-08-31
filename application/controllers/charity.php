@@ -45,19 +45,22 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
+		// Determine profile image path
 		if(file_exists("userimages/charityprofileimage/" . $_SESSION['currentcharity'] .".jpg"))
 			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $_SESSION['currentcharity'] . ".jpg";
 		else
 			$this->data['profile']['portraitpath'] = "img/defaultcharityportrait.png";
 
+		// Get average score
 		$this->data['profile']['rating'] = $this->Charity_expert->get_score($_SESSION['currentcharity']);
 
-
+		// get reviews
+		$this->data['reviews'] = $this->Charity_expert->get_reviews($_SESSION['currentcharity']);
 
 		if(array_key_exists('message', $_SESSION))
 		{
 			$this->data['message'] = $_SESSION['message'];
-			
+
 			unset($_SESSION['message']);
 		}
 

@@ -35,10 +35,28 @@ class Charity_expert extends CI_Model
 		return null;
 	}
 
+
+	function get_reviews($id)
+	{
+		$sql = "select distinct charityreview.id, volunteer.firstname, volunteer.lastname, charityreview.datestamp, charityreview.rating, charityreview.review, charityreview.hours from charityreview join volunteer on volunteer.id = charityreview.volunteerid where charityid = ? order by datestamp desc";
+
+		$result = $this->db->query($sql, $id);
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
+	}
+
 	function get_score($id)
 	{
 		// do some maths
-		return 80;
+		$sql = "select avg(rating) as score from charityreview where charityid = ?";
+
+		$result = $this->db->query($sql, $id);
+		return round($result->row()->score * 25);
 
 	}
 

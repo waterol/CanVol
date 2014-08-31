@@ -159,95 +159,58 @@
 	<div id="calendar">
 
 	</div>
-                    
+	<?php if(!is_null($reviews)): ?>
+		<?php foreach($reviews as $review): ?>
+			<div id="reviewsupercontainer">
+			    <div class="reviewcontainer">
+			      <div class="reviewcontainerleft">
+			        <div class="nameofcharityinreview">
+			          <?=$profile['name'] ?>
+			        </div>
+			        <div class="byreview">
+			          By:
+			        </div>
+			        <div class="nameofreviewer">
+			          <?=$review['firstname'] ?> <?=$review['lastname'] ?>
+			        </div>
 
-	<div id="reviewsupercontainer">
-	    <div class="reviewcontainer">
-	      <div class="reviewcontainerleft">
-	        <div class="nameofcharityinreview">
-	          Calgary Reads
-	        </div>
-	        <div class="byreview">
-	          By:
-	        </div>
-	        <div class="nameofreviewer">
-	          Liam Waterous
-	        </div>
+			      </div>
+			      
+			      <div class="reviewcontainerright">
+			        <div class="experienceinreview">
+			          The Experience:
 
-	      </div>
-	      
-	      <div class="reviewcontainerright">
-	        <div class="experienceinreview">
-	          The Experience:
+			        </div>
 
-	        </div>
+			        <div class="textinreview">
+			          <?=$review['review'] ?>
+			        </div>
+			        <div class="ratingsinreview">
+			          Rating: 
 
-	        <div class="textinreview">
-	          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
+			        </div>
+			        <div class="percentageinreview">
+			          <?=$review['rating'] ?>
+			        </div>
+			        <div class ="nothelpfulinreview btn">
+			          Not Helpful?
 
-	        </div>
-	        <div class="ratingsinreview">
-	          Rating: 
+			        </div>
+			        <div class="helpfulinreview btn btn-primary">
+			          Helpful?
 
-	        </div>
-	        <div class="percentageinreview">
-	          93%
-	        </div>
-	        <div class ="nothelpfulinreview btn">
-	          Not Helpful?
+			        </div>
 
-	        </div>
-	        <div class="helpfulinreview btn btn-primary">
-	          Helpful?
+			    </div>
 
-	        </div>
+		  	</div>
 
-	    </div>
+		<?php endforeach ?>
+	<?php else: ?>
+	<p>No Reviews... Yet</p>
 
-  	</div>
-
-    <div class="reviewcontainer">
-      <div class="reviewcontainerleft">
-        <div class="nameofcharityinreview">
-          Calgary Reads
-        </div>
-        <div class="byreview">
-          By:
-        </div>
-        <div class="nameofreviewer">
-          Liam Waterous
-        </div>
-
-      </div>
-      
-      <div class="reviewcontainerright">
-        <div class="experienceinreview">
-          The Experience:
-
-        </div>
-
-        <div class="textinreview">
-          Echo Park synth hashtag, bitters twee fanny pack Thundercats direct trade. Echo Park scenester meggings, photo booth salvia umami gentrify. Asymmetrical twee mlkshk, 3 wolf moon organic mustache hashtag DIY VHS wayfarers jean shorts freegan before they sold out. Freegan cardigan wayfarers banjo sustainable, meggings trust fund yr kitsch. Butcher wayfarers swag 
-
-        </div>
-        <div class="ratingsinreview">
-          Rating: 
-
-        </div>
-        <div class="percentageinreview">
-          93%
-        </div>
-        <div class ="nothelpfulinreview btn">
-          Not Helpful?
-
-        </div>
-        <div class="helpfulinreview btn btn-primary">
-          Helpful?
-
-        </div>
-
-        
-      <div>
+	<?php endif ?>
+                  
 
     </div>
 

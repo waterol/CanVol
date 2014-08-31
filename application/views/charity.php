@@ -129,20 +129,20 @@
 
 	<div id="collage">
         <div class="item">
-          <img src="img/land1.jpg" width="200" height="200">
+          <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
         
         <div class="item">
-          <img src="img/land2.jpg" width="200" height="200">
+          <img src="<?=base_url() ?>img/land2.jpg" width="200" height="200">
         </div>
         <div class="item">
-          <img src="img/land3.jpg" width="200" height="200">
+          <img src="<?=base_url() ?>img/land3.jpg" width="200" height="200">
         </div>           
         <div class="item">
-          <img src="img/landvertical.jpg" width="200" height="200">
+          <img src="<?=base_url() ?>img/landvertical.jpg" width="200" height="200">
         </div>
         <div class="item">
-          <img src="img/land1.jpg" width="200" height="200">
+          <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
             
       

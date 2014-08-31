@@ -48,7 +48,7 @@
               Amount of Hours Volunteering:
             </div>
             <div id="profiledatejoinedvalue" class="profileinfovalue">
-              38
+              <?=$profile['hours'] ?>
             </div>
 
 

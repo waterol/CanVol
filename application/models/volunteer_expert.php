@@ -37,6 +37,15 @@ class Volunteer_expert extends CI_Model
 		return 0;
 	}
 
+	function get_hours($volunteerid)
+	{
+		$sql = "select sum(hours) as totalhours from charityreview where volunteerid = ?";
+
+		$result = $this->db->query($sql, $volunteerid);
+
+		return $result->row()->totalhours;
+	}
+
 	function update($id, $savedata)
 	{
 		$this->db->where('id', $id);

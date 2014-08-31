@@ -77,7 +77,7 @@ class Charity extends MY_Controller {
 		// can't review a charity without first visiting it
     	if(!array_key_exists('currentcharity', $_SESSION))
 		{
-			redirect(base_url());
+			redirect(base_url() . "browsecharities");
 			exit();
 		}
 

@@ -2,9 +2,33 @@
 
 class Charity extends MY_Controller {
 
-	public function index()
+	private $data = array();
+
+	public function __construct() {        
+    	parent::__construct();
+
+    	$this->load->model("Charity_expert");
+	}
+
+	public function index($id)
 	{
-		$this->loadview('charity');
+    	if($id == 0)
+		{
+			redirect(base_url());
+			exit();
+		}
+
+		$profile = $this->Charity_expert->get_profile($id);
+
+		if($profile != null)
+			$this->data['profile'] = $profile[0];
+		else
+		{
+			redirect(base_url());
+			exit();
+		}
+
+		$this->loadview('charity', $this->data);
 	}
 
 	public function generateCalendar()

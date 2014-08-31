@@ -1,3 +1,4 @@
+<?=print_r($profile) ?>
 <div class="container">
 	<div id="charityinfo">
 		<div class="row">
@@ -16,7 +17,7 @@
 			<div class="col-sm-4">
 
 				<div id="nameofcharity">
-					Michael J. Fox
+					<?=$profile['name'] ?>
 				</div>
 				<div id="profilecontanctinfo">
 	        		
@@ -24,17 +25,17 @@
 	            	  Link to Website:
 	            	</div>
 	            	<div id="datejoinedonprofile" class="profileinfovalue">
-	              		<a href="https://www.michaeljfox.org">
-	              			https://www.michaeljfox.org
+	              		<a href="<?=$profile['website'] ?>">
+	              			<?=$profile['website'] ?>
 	              		</a>
 	            	</div>
 	        	</div>
 	        	<div>
 	            	<div id="currentlyliving" class="profileinfo">
-	              		Location Nearest You:
+	              		Location:
 	            	</div>
 	            	<div id="currentlylivingresponse" class="profileinfovalue">
-	            	  Calgary (1145 Sydenham Road)
+	            	  <?=$profile['location'] ?>
 	            	</div>
 	        	</div>
 	        	<div>
@@ -42,7 +43,7 @@
 	            	  Help Line:
 	            	</div>
 	            	<div id="amountofhourse" class="profileinfovalue">
-	              		403-Stop-Prks
+	              		<?=$profile['helpline'] ?>
 	            	</div>
 	        	</div>
 	        	<div>
@@ -50,7 +51,7 @@
 	              		CEO:
 	            	</div>
 	            	<div id="profiledatejoinedvalue" class="profileinfovalue">
-	              		Michael J. Fox
+	              		<?=$profile['ceo'] ?>
 	            	</div>
 	        	</div>
 	        	<div>
@@ -58,7 +59,7 @@
 	        			Inside or Outside?
 	        		</div>
 	        		<div id="insideoroutsideanswer" class="profileinfovalue">
-	        			Both!
+	        			<?=$profile['insideoroutside'] ?>
 	        		</div>
 	        	</div>
 	        </div>
@@ -68,7 +69,7 @@
 					Who Are We?
 				</div>
 				<div id="charityprofiletext">
-					The Michael J. Fox Foundation for Parkinson's Research is dedicated to finding a cure for Parkinson's disease through an aggressively funded research agenda and to ensure the development of improved therapies for those living with Parkinson's today
+					<?=$profile['description'] ?>
 				</div>
 				
 			</div>
@@ -77,7 +78,7 @@
 					Why Volunteer for Us?
 				</div>
 				<div id="whyustext">
-					Our model is different. It is accepted practice among private disease research funders that the most important decisions — how to allocate donor-raised dollars — are made by external scientific advisors and boards. We bucked this model from day one in favor of building an in-house team of formally trained PhDs and business-trained project managers.
+					<?=$profile['whyvolunteer'] ?>	
 				</div>
 
 			</div>
@@ -95,10 +96,6 @@
 	</div>
 
 
-
-	<div class="photosofcharitiesvolunteering">
-		Photos of the Michael J. Fox Charity
-	</div>
 	<div id="collage">
         <div class="item">
           <img src="img/land1.jpg" width="200" height="200">

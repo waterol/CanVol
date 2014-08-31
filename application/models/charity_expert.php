@@ -19,7 +19,20 @@ class Charity_expert extends CI_Model
 		}
 
 		return null;
+	}
 
+	function get_profile($id)
+	{
+		$sql = "select * from charity where id = ?";
+
+		$result = $this->db->query($sql, $id);
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
 	}
 
 }

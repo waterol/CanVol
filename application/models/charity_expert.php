@@ -42,4 +42,10 @@ class Charity_expert extends CI_Model
 
 	}
 
+	function applyreview($reviewdata)
+	{
+		$this->db->insert('charityreview', $reviewdata); 
+
+	}
+
 }

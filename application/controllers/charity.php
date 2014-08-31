@@ -64,8 +64,17 @@ class Charity extends MY_Controller {
 			exit();
 		}
 
+		// review, rating, hours
+		$reviewdata['volunteerid'] = $_SESSION['volunteerid'];
+		$reviewdata['charityid'] = $_SESSION['currentcharity'];
+		$reviewdata['datestamp'] = time();
+		$reviewdata['rating'] = $_POST['rating'];
+		$reviewdata['review'] = $_POST['review'];
+		$reviewdata['hours'] = $_POST['hours'];
 
+		$this->Charity_expert->applyreview($reviewdata);
 
+		redirect(base_url() . "charity/" . $_SESSION['currentcharity']);
 		
 	}
 }

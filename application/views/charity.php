@@ -90,7 +90,7 @@
       Write a review about us!
     </div>
     <div id="writingincharity">
-   		<textarea id="writeareviewcharity" placeholder="Type here..."></textarea>
+   		<textarea id="writeareviewcharity" name="review" placeholder="Type here..."></textarea>
    	</div>
    	
    	<div id="ratingincharity">

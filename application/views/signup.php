@@ -52,22 +52,22 @@
 	</div>
 
 	<div class="form-group">
-		<label for="email" class="col-sm-2 control-label">Choose a Password</label>
+		<label for="choosepw" class="col-sm-2 control-label">Choose a Password</label>
 		<div class="col-sm-8">
-			<input type="password" class="form-control signupinput" id="password_signup"  value="<?=set_value('password'); ?>"name="password" placeholder="Choose a Password">
+			<input type="password" id="choosepw" class="form-control signupinput" id="password_signup"  value="<?=set_value('password'); ?>"name="password" placeholder="Choose a Password">
 		</div>
 	</div>
 
 	<div class="form-group">
-		<label for="email" class="col-sm-2 control-label">Password (Again)</label>
+		<label for="choosepwconfirm" class="col-sm-2 control-label">Password (Again)</label>
 		<div class="col-sm-8">
-			<input type="passwordconfirm" class="form-control signupinput" id="password_validate" value="<?=set_value('passconf'); ?>" name="passconf" placeholder="Confirm your password">
+			<input type="password" id="choosepwconfirm" class="form-control signupinput" id="password_validate" value="<?=set_value('passconf'); ?>" name="passconf" placeholder="Confirm your password">
 		</div>
 	</div>
 
 
 	<div class="form-group">
-		<label for="email" class="col-sm-2 control-label">Please solve the CAPTCHA</label>
+		<label for="recaptcha" class="col-sm-2 control-label">Please solve the CAPTCHA</label>
 		<div class="col-sm-8">
 			<?=recaptcha_get_html($publickey) ?>
 		</div>

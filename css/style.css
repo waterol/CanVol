@@ -369,14 +369,15 @@ label
 
 #blogimage
 {
-  background-image:url('../img/test3.jpg');
+  background-image:url('../img/verticalvolunteer.jpg');
   width:30%;
-  height:800px;
+  height:700px;
   display:inline-block;
   background-repeat: no-repeat;
   font-size: 2em;
-  color:#FFFFFF;
-  background-size: 800px;
+  color:#428bca;
+  background-size: 470px;
+  padding-left: 15px;
 }
 
 

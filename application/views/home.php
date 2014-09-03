@@ -1,7 +1,7 @@
 
     <div id="slides">
       <ul class="rslides">
-        <li><img src="<?=base_url() ?>img/runningfox.png" alt=""></li>
+        <li><img src="<?=base_url() ?>img/untitled.png" alt=""></li>
         <li><img src="<?=base_url() ?>img/humanesocietybest.png" alt=""></li>
       </ul>
 

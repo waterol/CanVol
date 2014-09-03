@@ -4,13 +4,13 @@
         <li><img src="<?=base_url() ?>img/untitled.png" alt=""></li>
         <li><img src="<?=base_url() ?>img/humanesocietybest.png" alt=""></li>
       </ul>
-
-      <div id="slidetext">
+      <?php if(!array_key_exists('userid', $_SESSION)): ?>
+      <div id="slidetext" >
         <p id="st-leader">CanVol</p>
         <p id="st-follower">A Local Charity Network for Youth</p>
         <a href="<?=base_url() ?>gettingstartedindividual" id="getstartedbutton" class="btn btn-large btn-primary">Get Started</a>
       </div>
-
+    <?php endif ?>
     </div>
 
     <div class="container">

@@ -44,23 +44,7 @@
 	            	<div id="amountofhourse" class="profileinfovalue">
 	              		<?=$profile['helpline'] ?>
 	            	</div>
-	        	</div>
-	        	<div>
-	            	<div id="amountofhoursvolunteering" class="profileinfo">
-	              		CEO:
-	            	</div>
-	            	<div id="profiledatejoinedvalue" class="profileinfovalue">
-	              		<?=$profile['ceo'] ?>
-	            	</div>
-	        	</div>
-	        	<div>
-	        		<div id="insideoroutsidequestion" class="profileinfovalue">
-	        			Inside or Outside?
-	        		</div>
-	        		<div id="insideoroutsideanswer" class="profileinfovalue">
-	        			<?=$profile['insideoroutside'] ?>
-	        		</div>
-	        	</div>
+	            </div>
 	        </div>
 	    <div class="col-sm-5">
 		    <div id="charitybiobackground">

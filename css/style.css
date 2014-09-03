@@ -823,13 +823,14 @@ label
 {
   display:inline-block;
   font-weight: bold;
-  padding-right:15px;
   padding-bottom: 10px;
+  width:100px;
 }
 .profileinfovalue
 {
   display: inline-block;
   margin-top: 5px;
+
 }
 #charityprofiletitle
 {
@@ -919,6 +920,7 @@ label
 {
   width: 50px;
 }
+
 
 
 /* End Charity Profile */
@@ -1335,10 +1337,17 @@ label
 
 /* Media block mobile */
 @media (max-width: 767px){
-  #logincolumn
+  #usernameandpassword
   {
   	display:none;
-  	color:#469400;
+  }
+  #loginbutton
+  {
+    width:46%;
+  }
+  #signupbutton
+  {
+    width: 46%;
   }
   #charityimage
   {
@@ -1430,5 +1439,52 @@ label
 {
   width:100%;
   padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
+
+#slidetext
+{
+  display:none;
+}
+#browsebutton
+{
+  display: block;
+  width:100%;
+  border-radius: 0px;
+  height:30px;
+  margin-top:5px;
+}
+#search
+{
+  width:100%;
+}
+.browsecharitiescharities
+{
+  width:100%;
+  margin-left: 0;
+
+}
+.titleinbrowsecharities
+{
+  display: inline-block;
+}
+#topexplain
+{
+  font-size: 3em;
+}
+#sortonbrowsecharities
+{
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.filterdropdowns
+{
+  margin-bottom: 0;
+ 
+}
+
+
+
 /* End media block mobile */

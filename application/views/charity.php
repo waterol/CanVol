@@ -99,14 +99,15 @@
    		</select>
    	</div>
    	
-   	<div id="hoursvolunteered">
-   		How many hours did you volunteer? 
-   		<input type="text" id="hoursvolunteer" name="hours" value="<?=set_value('hours'); ?>"> hours
-   	</div>
+   	
 
 	<button class="textpost btn btn-primary" type="submit">
 		Post
 	</button>
+	<div id="hoursvolunteered">
+   		How many hours did you volunteer? 
+   		<input type="text" id="hoursvolunteer" name="hours" value="<?=set_value('hours'); ?>"> hours
+   	</div>
 
 	</form>
 

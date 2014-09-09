@@ -871,7 +871,7 @@ label
 #writeareviewaboutcharity
 {
   font-size: 2.0em; 
-  margin-top: 60px;
+  margin-top: 15px;
 
 }
 .textpost
@@ -921,6 +921,22 @@ label
   width: 50px;
 }
 
+#ratingincharity
+{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.6em;
+  margin-left: 10px;
+}
+#hoursvolunteered
+{
+  display: inline-block;
+  width: 50%;
+}
+.textpost.btn.btn-primary
+{
+  display: inline-block;
+}
 
 
 /* End Charity Profile */
@@ -1483,6 +1499,10 @@ label
 {
   margin-bottom: 0;
  
+}
+.titleinbrowsecharities
+{
+  font-size: 1.2em;
 }
 
 

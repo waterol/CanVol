@@ -1,3 +1,4 @@
+<?=form_open("createcharity/docreate", array("class" => "form-horizontal", "role" => "form")) ?>
 <div id="bigdivincreatecharity">
 
 	<div id="createcharityeasy">
@@ -18,3 +19,4 @@
 
 
 </div>
+</form>

@@ -35,73 +35,35 @@
 
 	</select>
 
+	<?php foreach($charities as $charity): ?>
 
+	<a href="<?=base_url() ?>charityprofile" id="charitylink"> 
+		<div class="browsecharitiescharities">
+			<div class="row">
 
+				<div class="col-sm-2">
+					<img src="img/profilepicforfox.jpg" class="charitylistimage">
+				</div>
 
-	<a href="<?=base_url() ?>charityprofile" id="charitylink"> <div class="browsecharitiescharities">
+				<div class="col-sm-10">
+					<p class="titleinbrowsecharities"><?=$charity['name'] ?></p>
+					<p class="addressinbrowsecharities">
+						Address: <?=$charity['location'] ?>
+					</p>
+					<p class="ratingsinbrowsecharities">
+						<?=round($charity['score']*25) ?>%
+					</p>
+					<p class="reviewsinbrowsecharities">
+						Reviews: <?=$charity['reviewcount'] ?>
+					</p> 
 
-		<div class="browsecharitiesleft">
-			<img src="img/profilepicforfox.jpg">
-		</div>
-
-		<div class="browsecharitiesright">
-			<p class="titleinbrowsecharities"> 		Michael J. Fox Foundation </p>
-			<p class="addressinbrowsecharities">
-				Address: New York, NY 10163-4777
-			</p>
-			<p class="ratingsinbrowsecharities" style="width:50%">
-				87%
-			</p>
-			<p class="reviewsinbrowsecharities">
-				Reviews: 56
-			</p> 
-
-		</div>
-
-	</div>
-</a>
-	<div class="browsecharitiescharities">
-
-		<div class="browsecharitiesleft">
-			<img src="img/profilepicforfox.jpg">
-		</div>
-
-		<div class="browsecharitiesright">
-			<p class="titleinbrowsecharities"> 		Michael J. Fox Foundation </p>
-			<p class="addressinbrowsecharities">
-				Address: New York, NY 10163-4777
-			</p>
-			<p class="ratingsinbrowsecharities" style="width:50%">
-				87%
-			</p>
-			<p class="reviewsinbrowsecharities">
-				Reviews: 56
-			</p> 
-
-		
-
+				</div>
+			</div>
 
 		</div>
+	</a>
 
-	</div>
-	<div class="browsecharitiescharities">
+	<?php endforeach ?>
 
-		<div class="browsecharitiesleft">
-			<img src="img/profilepicforfox.jpg">
-		</div>
 
-		<div class="browsecharitiesright">
-			<p class="titleinbrowsecharities"> 		Michael J. Fox Foundation </p>
-			<p class="addressinbrowsecharities">
-				Address: New York, NY 10163-4777
-			</p>
-			<p class="ratingsinbrowsecharities" style="width:50%">
-				87%
-			</p>
-			<p class="reviewsinbrowsecharities">
-				Reviews: 56
-			</p> 
-		</div>
-
-	</div>
 </div>

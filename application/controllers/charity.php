@@ -29,7 +29,6 @@ class Charity extends MY_Controller {
 
 		$this->loaddata();
 
-
 		$this->loadview('charity', $this->data);
 	}
 

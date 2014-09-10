@@ -37,7 +37,7 @@
 
 	<?php foreach($charities as $charity): ?>
 
-	<a href="<?=base_url() ?>charityprofile" id="charitylink"> 
+	<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
 		<div class="browsecharitiescharities">
 			<div class="row">
 

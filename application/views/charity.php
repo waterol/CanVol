@@ -142,8 +142,8 @@
 
 
 	<div id="calendar">
-
 	</div>
+
 	<?php if(!is_null($reviews)): ?>
 		<?php foreach($reviews as $review): ?>
 			<div id="reviewsupercontainer">

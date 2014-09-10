@@ -4,6 +4,12 @@ class Createcharity extends MY_Controller {
 
 	public function index()
 	{
+		if(!array_key_exists('volunteerid', $_SESSION))
+		{
+			redirect(base_url() . "login");
+			die();
+		}
+
 		$this->loadview('createcharity');
 	}
 

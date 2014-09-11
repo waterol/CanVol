@@ -1550,6 +1550,11 @@ label
   
   margin: 8px auto;
 }
-
+.charitylistimage
+{
+ width: 100%;
+ height: 100%;
+}
+.titleinbrowsecharities
 
 /* End media block mobile */

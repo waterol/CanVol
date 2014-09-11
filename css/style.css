@@ -807,8 +807,9 @@ label
 }
 #collage
 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
 }
 
 #calendar
@@ -944,6 +945,12 @@ label
   height:150px;
   vertical-align: top;
 }
+#charityphotosincharity
+{
+  font-size: 1.7em;
+  margin:0;
+}
+
 
 
 
@@ -1536,8 +1543,12 @@ label
 #postincharity
 {
   width: 100%;
-  margin: none;
-  padding: none;
+  margin: 0;
+}
+#percentagecharity
+{
+  
+  margin: 8px auto;
 }
 
 

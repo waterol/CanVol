@@ -113,6 +113,9 @@
 
 	</form>
 
+	<div id="charityphotosincharity">
+		People Volunteering at our Charity!
+	</div>
 
 	<div id="collage">
         <div class="item">

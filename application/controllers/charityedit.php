@@ -4,6 +4,6 @@ class Charityprofileedit extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('charityprofileedit');
+		$this->loadview('charityedit');
 	}
 }

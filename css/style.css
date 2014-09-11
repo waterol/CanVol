@@ -926,11 +926,12 @@ label
 #ratingincharity
 {
   vertical-align: top;
-  font-size: 1.6em;
-  margin-left: 10px;
+  font-size: 1.4em;
 }
 #hoursvolunteered
 {
+  vertical-align: top;
+  font-size: 01.1em;
 }
 .textpost.btn.btn-primary
 {
@@ -940,6 +941,8 @@ label
 {
   display: inline-block;
   width:25%;
+  height:150px;
+  vertical-align: top;
 }
 
 
@@ -1509,7 +1512,33 @@ label
 {
   font-size: 1.2em;
 }
+#besidethereview
+{
+  display:block;
+  width: 100%;
+}
 
+#writingincharity
+{
+  width: 100%;
+}
+#ratingincharity
+{
+  display: inline-block;
+  width: 45%;
+}
+#hoursvolunteered
+{
+  display: inline-block;
+  width:45%;
+  font-size: 1.2em;
+}
+#postincharity
+{
+  width: 100%;
+  margin: none;
+  padding: none;
+}
 
 
 /* End media block mobile */

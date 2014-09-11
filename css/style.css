@@ -193,6 +193,7 @@ label
 .cta-inner
 {
   width: 80%;
+  margin:0 auto;
 }
 
 
@@ -363,6 +364,7 @@ label
 	font-family: "segoiui", verdana, serif;
 	width:65%;
 	vertical-align: top;
+  padding: 8px;
 
 }
 
@@ -923,20 +925,23 @@ label
 
 #ratingincharity
 {
-  display: inline-block;
   vertical-align: top;
   font-size: 1.6em;
   margin-left: 10px;
 }
 #hoursvolunteered
 {
-  display: inline-block;
-  width: 50%;
 }
 .textpost.btn.btn-primary
 {
   display: inline-block;
 }
+#besidethereview
+{
+  display: inline-block;
+  width:25%;
+}
+
 
 
 /* End Charity Profile */

@@ -88,26 +88,28 @@
    		<textarea id="writeareviewcharity" name="review" placeholder="Type here..."><?=set_value('review'); ?></textarea>
    	</div>
    	
-   	<div id="ratingincharity">
-   		Rate Your Experience 
-   		<select id="charitynumericrating" name="rating">
-   			<option value="4" <?=set_select('rating', '4', TRUE); ?>>Great!</option>
-   			<option value="3" <?=set_select('rating', '3'); ?>>Good</option>
-   			<option value="2" <?=set_select('rating', '2'); ?>>Fair</option>
-   			<option value="1" <?=set_select('rating', '1'); ?>>Poor</option>
-   			<option value="0" <?=set_select('rating', '0'); ?>>Avoid!</option>
-   		</select>
-   	</div>
-   	
-   	
+   	<div>
+	   	<div id="ratingincharity">
+	   		Rate Your Experience 
+	   		<select id="charitynumericrating" name="rating">
+	   			<option value="4" <?=set_select('rating', '4', TRUE); ?>>Great!</option>
+	   			<option value="3" <?=set_select('rating', '3'); ?>>Good</option>
+	   			<option value="2" <?=set_select('rating', '2'); ?>>Fair</option>
+	   			<option value="1" <?=set_select('rating', '1'); ?>>Poor</option>
+	   			<option value="0" <?=set_select('rating', '0'); ?>>Avoid!</option>
+	   		</select>
+	   	</div>
+	   	
+	   	<div id="hoursvolunteered">
+	   		How many hours did you volunteer? 
+	   		<input type="text" id="hoursvolunteer" name="hours" value="<?=set_value('hours'); ?>"> hours
+	   	</div>
+	 </div>
 
 	<button class="textpost btn btn-primary" type="submit">
 		Post
 	</button>
-	<div id="hoursvolunteered">
-   		How many hours did you volunteer? 
-   		<input type="text" id="hoursvolunteer" name="hours" value="<?=set_value('hours'); ?>"> hours
-   	</div>
+	
 
 	</form>
 

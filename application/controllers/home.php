@@ -4,7 +4,7 @@ class Home extends MY_Controller {
 
 	public function index()
 	{
-		require('E:/xampp/htdocs/canvol/blog/wp-blog-header.php');
+		require('./blog/wp-blog-header.php');
 		$this->loadview('home');
 	}
 }

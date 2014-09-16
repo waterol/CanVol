@@ -12,7 +12,6 @@
     <link href="<?=base_url() ?>css/passfield.min.css" rel="stylesheet">
     <link href="<?=base_url() ?>css/calendar.css" rel="stylesheet">
     <link href="<?=base_url() ?>css/style.css" rel="stylesheet">
-
     <script>
       var config = {
         base: "<?=base_url(); ?>"
@@ -84,3 +83,4 @@
     
       </div>
     </div>
+<?php

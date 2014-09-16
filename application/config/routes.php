@@ -45,7 +45,7 @@ $route['profile/(:num)'] = "profile/index/$1";
 $route['profileedit/(:num)'] = "profileedit/index/$1";
 
 $route['charity/(:num)'] = "charity/index/$1";
-$route['charityprofileedit/(:num)'] = "charityprofileedit/index/$1";
+$route['charityedit/(:num)'] = "charityedit/index/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

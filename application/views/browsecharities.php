@@ -51,7 +51,7 @@
 						Address: <?=$charity['location'] ?>
 					</p>
 					<p class="ratingsinbrowsecharities">
-						<?=round($charity['score']*25) ?>%
+						<?php echo ($charity['reviewcount'] < 3 ? "??" : round($charity['score']*25) . "%") ?>
 					</p>
 					<p class="reviewsinbrowsecharities">
 						Reviews: <?=$charity['reviewcount'] ?>

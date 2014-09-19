@@ -72,9 +72,6 @@ var filters = [];
 
         selector = selector.substring(0, selector.length - 2);
 
-        alert(selector);
-
-
         $(".browsecharitiescharities").show();
         $(selector).hide();
 

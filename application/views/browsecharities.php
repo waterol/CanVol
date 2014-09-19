@@ -3,22 +3,23 @@
 		Find the ideal charity for you!
 	</div>
 
-	<select class="filterdropdowns" id="ageonbrowsecharities" name="age">
-		<option value="Age"> Age </option>  
+	<select class="filterdropdowns" id="ageonbrowsecharities" name="agegroup">
+		<option value="showall"> Age </option>  
+		<option value="all"> All Ages </option>
 		<option value="12-14"> 12-14 </option>
 		<option value="15-17"> 15-17 </option>
 		<option value="18+"> 18+ </option>
 
 	</select>
-	<select class="filterdropdowns" name="charityfocus">
-		<option value="charityfocus"> Charity Focus </option>
+	<select class="filterdropdowns" name="focus">
+		<option value="showall"> Charity Focus </option>
 		<option value="humanitarian"> Humanitarian </option>
 		<option value="animal"> Animal </option>
 		<option value="research"> Research </option>
 		<option value="other"> Other </option>
 	</select>
-	<select class="filterdropdowns" name="location">
-		<option value="location"> Location </option>
+	<select class="filterdropdowns" name="quadrant">
+		<option value="showall"> Location </option>
 		<option value="ne"> NE </option>
 		<option value="nw"> NW </option>
 		<option value="se"> SE </option>
@@ -38,7 +39,7 @@
 	<?php foreach($charities as $charity): ?>
 
 	<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
-		<div class="browsecharitiescharities">
+		<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
 			<div class="row">
 
 				<div class="col-xs-6 col-md-2">

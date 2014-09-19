@@ -1,3 +1,5 @@
+var filters = [];
+
  $(function() {
     $(".rslides").responsiveSlides({
     	
@@ -44,6 +46,40 @@
             checkMode: PassField.CheckModes.MODERATE
             });
     }
+
+    $('.filterdropdowns').change(function() {
+        var name = $(this).attr('name');
+        var val = this.value;
+
+        if(val == "showall")
+            filters[name] = null;
+            //$('.browsecharitiescharities').fadeIn();
+        else
+        {
+            filters[name] = val;
+            //$(".browsecharitiescharities[data-"+ name +"='"+ value +"']").fadeIn();
+           // $(".browsecharitiescharities[data-"+ name +"!='"+ value +"']").fadeOut();
+        }
+
+        var selector = "";
+        console.log(filters);
+
+        for (var key in filters) {
+          if (filters.hasOwnProperty(key))
+            if(filters[key] != null)
+                selector = selector + ".browsecharitiescharities[data-"+ key +"!='"+ filters[key] +"'], ";
+        }
+
+        selector = selector.substring(0, selector.length - 2);
+
+        alert(selector);
+
+
+        $(".browsecharitiescharities").show();
+        $(selector).hide();
+
+
+    })
 
 });
 

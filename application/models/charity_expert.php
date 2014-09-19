@@ -23,7 +23,7 @@ class Charity_expert extends CI_Model
 
 	function get_all_charities_with_meta_data()
 	{
-		$sql = "select charity.id, name, location, avg(rating) as score, count(charityreview.id) as reviewcount from charity left join charityreview on charityreview.charityid = charity.id group by charity.id, charity.name, charity.location";
+		$sql = "select charity.id, name, location, agegroup, focus, quadrant, avg(rating) as score, count(charityreview.id) as reviewcount from charity left join charityreview on charityreview.charityid = charity.id group by charity.id, charity.name, charity.location";
 
 		$result = $this->db->query($sql);
 

@@ -36,35 +36,39 @@
 
 	</select>
 
-	<?php foreach($charities as $charity): ?>
+	<div id="charitylist">
 
-	<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
-		<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
-			<div class="row">
+		<?php foreach($charities as $charity): ?>
 
-				<div class="col-xs-6 col-md-2">
-					<img src="img/profilepicforfox.jpg" class="charitylistimage">
+		<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
+			<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
+				<div class="row">
+
+					<div class="col-xs-6 col-md-2">
+						<img src="img/profilepicforfox.jpg" class="charitylistimage">
+					</div>
+
+					<div class="col-xs-6 col-md-10">
+						<p class="titleinbrowsecharities"><?=$charity['name'] ?></p>
+						<p class="addressinbrowsecharities">
+							Address: <?=$charity['location'] ?>
+						</p>
+						<p class="ratingsinbrowsecharities">
+							<?php echo ($charity['reviewcount'] < 3 ? "??" : round($charity['score']*25) . "%") ?>
+						</p>
+						<p class="reviewsinbrowsecharities">
+							Reviews: <?=$charity['reviewcount'] ?>
+						</p> 
+
+					</div>
 				</div>
 
-				<div class="col-xs-6 col-md-10">
-					<p class="titleinbrowsecharities"><?=$charity['name'] ?></p>
-					<p class="addressinbrowsecharities">
-						Address: <?=$charity['location'] ?>
-					</p>
-					<p class="ratingsinbrowsecharities">
-						<?php echo ($charity['reviewcount'] < 3 ? "??" : round($charity['score']*25) . "%") ?>
-					</p>
-					<p class="reviewsinbrowsecharities">
-						Reviews: <?=$charity['reviewcount'] ?>
-					</p> 
-
-				</div>
 			</div>
+		</a>
 
-		</div>
-	</a>
+		<?php endforeach ?>
 
-	<?php endforeach ?>
+	</div>
 
 
 </div>

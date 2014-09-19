@@ -1,5 +1,15 @@
 var filters = [];
 
+function sortUsingNestedText(parent, childSelector, keySelector) {
+    var items = parent.children(childSelector).sort(function(a, b) {
+        var vA = $(keySelector, a).text();
+        var vB = $(keySelector, b).text();
+        return (vA > vB) ? -1 : (vA < vB) ? 1 : 0;
+    });
+    parent.append(items);
+}
+
+
  $(function() {
     $(".rslides").responsiveSlides({
     	
@@ -81,7 +91,16 @@ var filters = [];
 
     })
 
+    $('#sortonbrowsecharities').change(function() {
+    {
+        if(this.value == "mostpopular")
+            sortUsingNestedText($('#charitylist'), 'a', '.reviewsinbrowsecharities');
+        if(this.value == "highestrated")
+            sortUsingNestedText($('#charitylist'), 'a', '.ratingsinbrowsecharities');
+    }
+
 });
 
 
-    console.log(config.base + 'charityprofile/generateCalendar');
+
+console.log(config.base + 'charityprofile/generateCalendar');

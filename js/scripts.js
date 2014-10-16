@@ -82,9 +82,6 @@ function sortUsingNestedText(parent, childSelector, keySelector) {
 
         selector = selector.substring(0, selector.length - 2);
 
-        alert(selector);
-
-
         $(".browsecharitiescharities").show();
         $(selector).hide();
 

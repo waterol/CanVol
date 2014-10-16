@@ -45,8 +45,8 @@ class Charity extends MY_Controller {
 		}
 
 		// Determine profile image path
-		if(file_exists("userimages/charityprofileimage/" . $_SESSION['currentcharity'] .".jpg"))
-			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $_SESSION['currentcharity'] . ".jpg";
+		if(file_exists("userimages/charityimages/" . $_SESSION['currentcharity'] .".jpg"))
+			$this->data['profile']['portraitpath'] = "userimages/charityimage/" . $_SESSION['currentcharity'] . ".jpg";
 		else
 			$this->data['profile']['portraitpath'] = "img/defaultcharityportrait.png";
 

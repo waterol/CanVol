@@ -60,6 +60,7 @@
           <p><em><?php the_date(); ?></em></p>
           <div id="blogfontsize">
             <?php the_content(); ?> 
+            <p><a href="http://canvol.org/blog"> See our previous entries... </a> </p>
           </div>
 
         </div>

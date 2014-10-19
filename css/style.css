@@ -1374,8 +1374,44 @@ label
     margin: 50px;
   }
 /* End Create Charity */
+  #alltheinformationinthisbox
+  {
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 10px;
 
 
+  }
+  #contactusfirsttitle
+  {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .contactustitles
+  {
+    font-size: 1.5em;
+    text-align:middle;
+  }
+  #contactinformationincontact
+  {
+    width:600px;
+    margin:0 auto;
+  }
+  .classforinputsincontact
+  {
+    width:100%;
+  }
+  #textareaincontact
+  {
+    height:130px;
+  }
+  #buttonincontact
+  {
+    background-color: #8BC53F;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+  }
 /* Media block mobile */
 @media (max-width: 767px){
   #usernameandpassword

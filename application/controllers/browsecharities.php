@@ -14,6 +14,16 @@ class Browsecharities extends MY_Controller {
 	{
 		$this->data['charities'] = $this->Charity_expert->get_all_charities_with_meta_data();
 
+		for($i=0;$i<count($this->data['charities']);$i++)
+		{
+
+			// Determine profile image path
+			if(file_exists("userimages/charityimage/" . $this->data['charities'][$i]['id'] .".jpg"))
+				$this->data['charities'][$i]['portraitpath'] = "userimages/charityimage/" . $this->data['charities'][$i]['id'] . ".jpg";
+			else
+				$this->data['charities'][$i]['portraitpath'] = "img/defaultcharityportrait.png";
+		}
+
 		$this->loadview('browsecharities', $this->data);
 	}
 }

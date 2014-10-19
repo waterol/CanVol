@@ -47,18 +47,19 @@
 	            </div>
 	            <div>
 	            	<div id="agerequirment" class="profileinfo">
-	            	  Age Requirment
+	            	  Age
 	            	</div>
 	            	<div class="profileinfovalue">
-	              		<?=$profile['agerange_min'] ?> -
-	              		<?=$profile['agerange_max'] ?>
+	              		<?=$profile['agegroup_min'] ?> -
+	              		<?=$profile['agegroup_max'] ?>
 	            	</div>
 	            </div><div>
 	            	<div id="focusincharity" class="profileinfo">
 	            	  Charity Focus
 	            	</div>
 	            	<div id="amountofhourse" class="profileinfovalue">
-	              		<?=$profile['focus'] ?>
+	              		<?=ucfirst($profile['focus']) ?>
+
 	            	</div>
 	            </div>
 	        </div>

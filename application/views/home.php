@@ -58,7 +58,7 @@
           setup_postdata( $posts[0] ); ?>
           <p><strong><?php the_title(); ?></strong></p>
           <p><em><?php the_date(); ?></em></p>
-          <div>
+          <div id="blogfontsize">
             <?php the_content(); ?> 
           </div>
 

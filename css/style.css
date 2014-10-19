@@ -392,6 +392,7 @@ label
 #footer
 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #footer > p
@@ -416,6 +417,11 @@ label
   font-size: 1.5em;
   padding-left:20px;
   margin-top: -5px;
+}
+
+#blogfontsize
+{
+  font-size: 1.3em;
 }
 
 /* End logged in area */
@@ -836,6 +842,7 @@ label
 {
   display: inline-block;
   margin-top: 5px;
+  font-size: 1.2em;
 
 }
 #charityprofiletitle

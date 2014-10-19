@@ -53,6 +53,9 @@ class Charity extends MY_Controller {
 		// Get average score
 		$this->data['profile']['rating'] = $this->Charity_expert->get_score($_SESSION['currentcharity']);
 
+		if($this->data['profile']['rating'] == 0)
+			$this->data['profile']['rating'] = "??";
+
 		// get reviews
 		$this->data['reviews'] = $this->Charity_expert->get_reviews($_SESSION['currentcharity']);
 

@@ -39,12 +39,8 @@
 	<div id="charitylist">
 		<?php foreach($charities as $charity): ?>
 
-	<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
-		<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup_min'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
-			<div class="row">
-
 		<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
-			<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
+			<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup_min'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
 				<div class="row">
 
 					<div class="col-xs-6 col-md-2">

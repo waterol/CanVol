@@ -45,6 +45,22 @@
 	              		<?=$profile['helpline'] ?>
 	            	</div>
 	            </div>
+	            <div>
+	            	<div id="agerequirment" class="profileinfo">
+	            	  Age Requirment
+	            	</div>
+	            	<div class="profileinfovalue">
+	              		<?=$profile['agerange_min'] ?> -
+	              		<?=$profile['agerange_max'] ?>
+	            	</div>
+	            </div><div>
+	            	<div id="focusincharity" class="profileinfo">
+	            	  Charity Focus
+	            	</div>
+	            	<div id="amountofhourse" class="profileinfovalue">
+	              		<?=$profile['focus'] ?>
+	            	</div>
+	            </div>
 	        </div>
 	    <div class="col-sm-5">
 		    <div id="charitybiobackground">

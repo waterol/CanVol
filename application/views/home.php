@@ -15,7 +15,9 @@
 
     <div class="container">
       <div id="search">
-        <input id="searchwide" name="search" type="text" placeholder="Search for Charities, People etc." class="input-sm search" required="">
+        <form method="POST" action="<?=base_url() ?>browsecharities/search" id="searchform">
+          <input id="searchwide" name="terms" type="text" placeholder="Search for Charities" class="input-sm search" required="">
+        </form>
       </div>
       <div id="browsebutton">
         <button onclick="location.href='<?=base_url() ?>browsecharities'" id="browsecharities" name="signup"> Browse Charities!</button>

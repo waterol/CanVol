@@ -295,7 +295,10 @@ label
 }
 
 
-
+#searchform
+{
+  width: 100%;
+}
 
 #searchwide
 {

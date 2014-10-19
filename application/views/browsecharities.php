@@ -36,6 +36,7 @@
 
 	</select>
 
+	<?php if(count($charities) > 0): ?>
 	<div id="charitylist">
 		<?php foreach($charities as $charity): ?>
 
@@ -68,6 +69,9 @@
 		<?php endforeach ?>
 
 	</div>
+	<?php else: ?>
+		<p>Couldn't find any charities!</p>
+	<?php endif ?>
 
 
 </div>

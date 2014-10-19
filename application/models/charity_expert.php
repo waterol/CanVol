@@ -35,6 +35,21 @@ class Charity_expert extends CI_Model
 		return null;
 	}
 
+	function search_charities_with_meta_data($terms)
+	{
+		$sql = "select charity.id, name, location, agegroup_min, agegroup_max, focus, quadrant, avg(rating) as score, count(charityreview.id) as reviewcount from charity left join charityreview on charityreview.charityid = charity.id where charity.name like ? group by charity.id, charity.name, charity.location ";
+
+		$result = $this->db->query($sql, "%" . $terms . "%");
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
+
+	}
+
 	function create_charity($name)
 	{
 

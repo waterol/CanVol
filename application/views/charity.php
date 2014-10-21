@@ -214,7 +214,7 @@
 
 		<?php endforeach ?>
 	<?php else: ?>
-	<p>No Reviews... Yet</p>
+	<p id="noreviewsincharity">No Reviews... Yet</p>
 
 	<?php endif ?>
                   

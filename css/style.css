@@ -1373,14 +1373,17 @@ label
     width:200px;
     margin: 50px;
   }
+  #noreviewsincharity
+  {
+    font-size:2.5em;
+  }
 /* End Create Charity */
+/* Start Contact */
   #alltheinformationinthisbox
   {
     background-color: #FFFFFF;
     margin: 20px;
     border-radius: 10px;
-
-
   }
   #contactusfirsttitle
   {
@@ -1412,6 +1415,44 @@ label
     color:#FFFFFF;
     margin-bottom: 10px;
   }
+/* End Contact*/
+/* Start Forgotten Password */
+  #alltheinformationinpassword
+  {
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  #titleinpassword
+  {
+    font-size: 3em;
+    text-align: center;
+  }
+  .passwordtitles
+  {
+    font-size: 1.5em;
+    text-align:center;
+    display: inline-block;
+    margin-left: 100px;
+  }
+  .passwordinputs
+  {
+    width:60%;
+    margin:0 auto;
+    display: inline-block;
+  }
+  #forottteninpassword
+  {
+    width:600px;
+    margin:0 auto;
+    display: inline-block;
+  }
+  #passwordemailinpassword
+  {
+    font-size: 2em;
+    text-align: center;
+  }
+/* End Forgotten Password */
 /* Media block mobile */
 @media (max-width: 767px){
   #usernameandpassword

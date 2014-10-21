@@ -20,13 +20,17 @@
 					<input type="password" name="password" id="passwordinlogin" placeholder="Your password">
 				</label>
 			</div>
+			
 			<div>
 				<label for="rememberme">Remember Me </label>
 					<input type="checkbox" name="rememberme">
 				</label>
 			</div>
+			<div id="forgotpasswordinpassword">	<a href="<?=base_url() ?> fogottenpassword">
+				Forgot Your Password?
+			</div>
 			<div>
-				<input type="submit" value="Log In" class="btn btn-primary"/>
+				<input type="submit" value="Log In" id="buttoninlogin" class="btn btn-primary"/>
 			</div>
 		</div>
 

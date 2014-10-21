@@ -1249,6 +1249,15 @@ label
   vertical-align: top;
   margin-right: 50px;
 }
+#forgotpasswordinpassword
+{
+  text-align: center;
+}
+#buttoninlogin
+{
+  background-color: #8BC53F;
+  outline:none;
+}
 
 
 
@@ -1451,6 +1460,10 @@ label
   {
     font-size: 2em;
     text-align: center;
+  }
+  #forgotpasswordinpassword
+  {
+    font-size: 1.3em;
   }
 /* End Forgotten Password */
 /* Media block mobile */

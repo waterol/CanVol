@@ -39,7 +39,7 @@ class Profileedit extends MY_Controller {
 		
 		$this->data['profile']['stars'] = $this->Volunteer_expert->get_score($id);
 
-		
+
 		$this->data['profile']['hours'] = $this->Volunteer_expert->get_hours($id);
 
 		if(file_exists("userimages/profileimage/" . $id .".jpg"))
@@ -66,16 +66,15 @@ class Profileedit extends MY_Controller {
 	public function updateportrait()
 	{
 		$allowedExts = array("gif", "jpeg", "jpg", "png");
-		$temp = explode(".", $_FILES["newportrait"]["name"]);
+		$temp = explode(".", @$_FILES["newportrait"]["name"]);
 		$extension = end($temp);
 
-		if ((($_FILES["newportrait"]["type"] == "image/gif")
-		|| ($_FILES["newportrait"]["type"] == "image/jpeg")
-		|| ($_FILES["newportrait"]["type"] == "image/jpg")
-		|| ($_FILES["newportrait"]["type"] == "image/pjpeg")
-		|| ($_FILES["newportrait"]["type"] == "image/x-png")
-		|| ($_FILES["newportrait"]["type"] == "image/png"))
-		&& ($_FILES["newportrait"]["size"] < 2000000)
+		if (((@$_FILES["newportrait"]["type"] == "image/jpeg")
+		|| (@$_FILES["newportrait"]["type"] == "image/jpg")
+		|| (@$_FILES["newportrait"]["type"] == "image/pjpeg")
+		|| (@$_FILES["newportrait"]["type"] == "image/x-png")
+		|| (@$_FILES["newportrait"]["type"] == "image/png"))
+		&& (@$_FILES["newportrait"]["size"] < 2000000)
 		&& in_array($extension, $allowedExts)) {
 		  if ($_FILES["newportrait"]["error"] > 0) {
 		    die($_FILES["newportrait"]["error"]);
@@ -84,7 +83,7 @@ class Profileedit extends MY_Controller {
 		      move_uploaded_file($_FILES["newportrait"]["tmp_name"], "userimages/profileimage/" . $_SESSION['volunteerid'] . ".jpg");
 		  }
 		} else {
-		  die("Invalid file");
+		  die("Picture must be under 2 MB, and must be a JPG or PNG! Please go back and try again.");
 		}
 
 		redirect(base_url() . "profileedit/" . $_SESSION['volunteerid']);

@@ -61,6 +61,18 @@ function sortUsingNestedText(parent, childSelector, keySelector) {
         var name = $(this).attr('name');
         var val = this.value;
 
+
+        if(name == "agegroup")
+        {
+            $('.browsecharitiescharities').each(function (i) {
+                if( $(this).data('agegroupmin') <= val && $(this).data('agegroupmax') >= val )
+                {
+                    $(this).attr('data-agegroup', val);
+                    console.log('assign ' + val + ' to ' + $(this).data('agegroupmin'));
+                }
+            });
+        }
+
         if(val == "showall")
             filters[name] = null;
             //$('.browsecharitiescharities').fadeIn();
@@ -72,7 +84,6 @@ function sortUsingNestedText(parent, childSelector, keySelector) {
         }
 
         var selector = "";
-        console.log(filters);
 
         for (var key in filters) {
           if (filters.hasOwnProperty(key))

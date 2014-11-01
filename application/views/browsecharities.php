@@ -5,10 +5,14 @@
 
 	<select class="filterdropdowns" id="ageonbrowsecharities" name="agegroup">
 		<option value="showall"> Age </option>  
-		<option value="all"> All Ages </option>
-		<option value="12-14"> 12-14 </option>
-		<option value="15-17"> 15-17 </option>
-		<option value="18+"> 18+ </option>
+		<option value="12"> 12 </option>
+		<option value="13"> 13 </option>
+		<option value="14"> 14 </option>
+		<option value="15"> 15 </option>
+		<option value="16"> 16 </option>
+		<option value="17"> 17 </option>
+		<option value="18"> 18 </option>
+
 
 	</select>
 	<select class="filterdropdowns" name="focus">
@@ -41,7 +45,7 @@
 		<?php foreach($charities as $charity): ?>
 
 		<a href="<?=base_url() ?>charity/<?=$charity['id'] ?>" id="charitylink"> 
-			<div class="browsecharitiescharities" data-agegroup='<?=$charity['agegroup_min'] ?>' data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
+			<div class="browsecharitiescharities" data-agegroup="" data-agegroupmin='<?=$charity['agegroup_min'] ?>' data-agegroupmax='<?=$charity['agegroup_max'] ?>'  data-focus='<?=$charity['focus'] ?>' data-quadrant='<?=$charity['quadrant'] ?>'>
 				<div class="row">
 
 					<div class="col-xs-6 col-md-2">

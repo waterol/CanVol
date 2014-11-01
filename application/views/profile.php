@@ -109,10 +109,10 @@
     <button class="btn" data-calendar-nav="today">Today</button>
     <button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
   </div>
-    <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
-  <div id="calendar">
+     <!--<h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
+ <div id="calendar">
 
-  </div>
+  </div>-->
   <div id="reviewtitleinprofile">
     <?=$profile['firstname'] ?>'s Reviews:
   </div>

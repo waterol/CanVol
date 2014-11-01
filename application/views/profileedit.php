@@ -75,7 +75,7 @@
                 Amount of Hours Volunteering:
               </div>
               <div id="profiledatejoinedvalue" class="profileinfovalue">
-                38
+                <?=$profile['hours'] ?>
               </div>
 
 
@@ -100,14 +100,6 @@
       </div>
 
       
-
-
-
-
-
-
-
-
       <div id="picturesofsomeonevolunteering">
        Picture of <?=$profile['firstname'] ?> Volunteering!
       </div>
@@ -136,10 +128,10 @@
       <button class="btn" data-calendar-nav="today">Today</button>
       <button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
     </div>
-      <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
+    <!--  <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
     <div id="calendar">
 
-    </div>
+    </div>-->
     <div id="reviewtitleinprofile">
       <?=$profile['firstname'] ?>'s Reviews:
     </div>

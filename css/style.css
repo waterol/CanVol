@@ -374,15 +374,17 @@ label
 
 #blogimage
 {
-  background-image:url('../img/verticalvolunteer.jpg');
+  background-image:url('../img/canvolblogimage.png');
   width:30%;
-  height:700px;
+  height:685px;
   display:inline-block;
   background-repeat: no-repeat;
   font-size: 2em;
-  color:#428bca;
+  color:#FFFFFF;
   background-size: 470px;
   padding-left: 15px;
+  background-position: top left;
+  font-weight: bold;
 }
 
 

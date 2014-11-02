@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="CanVol.org is a non-profit organization whose primary purpose is to INFORM and ENCOURAGE youth volunteering in Calgary">
-    <!--meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="description" content="CanVol.org is a non-profit orginization whose primary purpose is to INFORM and ENCOURAGE youth volunteering in Calgary.">
+    <meta name="keywords" content="charity,calgary,volunteering,reviews,youth,volunteer,canvol.org,canvol,youthcharity,browse,charities,profile,search,getstarted,CanVol,CanVol.org,YMCA,help,youthvolunteering,login,signup,login,sign,blog,liam's"> <!--meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title> CanVol.org</title>
     <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>

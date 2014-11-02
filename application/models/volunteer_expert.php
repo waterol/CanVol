@@ -37,6 +37,20 @@ class Volunteer_expert extends CI_Model
 		return 0;
 	}
 
+	function get_reviews($id)
+	{
+		$sql = "select distinct charity.name, charityreview.id, volunteer.firstname, volunteer.lastname, charityreview.datestamp, charityreview.rating, charityreview.review, charityreview.hours from charityreview join volunteer on volunteer.id = charityreview.volunteerid join charity on charity.id = charityreview.charityid where volunteerid = ? order by datestamp desc";
+
+		$result = $this->db->query($sql, $id);
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
+	}
+
 	function get_hours($volunteerid)
 	{
 		$sql = "select sum(hours) as totalhours from charityreview where volunteerid = ?";
@@ -51,6 +65,20 @@ class Volunteer_expert extends CI_Model
 		$this->db->where('id', $id);
 		$this->db->update('volunteer', $savedata); 
 
+	}
+
+	function get_images($id)
+	{
+		$sql = "select imagepath from charityimage where volunteerid = ?";
+
+		$result = $this->db->query($sql, $id);
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
 	}
 
 	function transform_location($location)

@@ -39,6 +39,10 @@ class Profile extends MY_Controller {
 
 		$this->data['profile']['hours'] = $this->Volunteer_expert->get_hours($id);
 
+		$this->data['profile']['reviews'] = $this->Volunteer_expert->get_reviews($id);
+
+		$this->data['profile']['images'] = $this->Volunteer_expert->get_images($id);
+
 		if(file_exists("userimages/profileimage/" . $id .".jpg"))
 			$this->data['profile']['portraitpath'] = "userimages/profileimage/" . $id . ".jpg";
 		else

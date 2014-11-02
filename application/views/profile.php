@@ -82,27 +82,36 @@
 
 
     <div id="picturesofsomeonevolunteering">
-     Picture of <?=$profile['firstname'] ?> Volunteering!
+     Picture of <?=$profile['firstname'] ?> Volunteering!<br><br>
     </div>
   </div>  
+
   <div id="collage">
-      <div class="item">
-        <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
-      </div>
+    <?php foreach($profile['images'] as $image): ?>
+    <div class="item">
+          <img src="<?=base_url() ?>userimages/volunteerimages/<?=$image['imagepath'] ?>" width="200" height="200">
+        </div>
+
+    <?php endforeach ?>
+        <!--<div class="item">
+          <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
+        </div>
+        
+        <div class="item">
+          <img src="<?=base_url() ?>img/land2.jpg" width="200" height="200">
+        </div>
+        <div class="item">
+          <img src="<?=base_url() ?>img/land3.jpg" width="200" height="200">
+        </div>           
+        <div class="item">
+          <img src="<?=base_url() ?>img/landvertical.jpg" width="200" height="200">
+        </div>
+        <div class="item">
+          <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
+        </div>
+         -->
       
-      <div class="item">
-        <img src="<?=base_url() ?>img/land2.jpg" width="200" height="200">
-      </div>
-      <div class="item">
-        <img src="<?=base_url() ?>img/land3.jpg" width="200" height="200">
-      </div>           
-      <div class="item">
-        <img src="<?=base_url() ?>img/landvertical.jpg" width="200" height="200">
-      </div>
-      <div class="item">
-        <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
-      </div>
-  </div>
+    </div>
        
   <!--<div class="btn-group" id="calendarcontrol">
     <button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
@@ -117,6 +126,59 @@
     <?=$profile['firstname'] ?>'s Reviews:
   </div>
 
+    <?php if(!is_null($profile['reviews'])): ?>
+    <?php foreach($profile['reviews'] as $review): ?>
+      <div id="reviewsupercontainer">
+          <div class="reviewcontainer">
+            <div class="reviewcontainerleft">
+              <div class="nameofcharityinreview">
+                <?=$review['name'] ?>
+              </div>
+              <div class="byreview">
+                By:
+              </div>
+              <div class="nameofreviewer">
+                <?=$review['firstname'] ?> <?=$review['lastname'] ?>
+              </div>
+
+            </div>
+            
+            <div class="reviewcontainerright">
+              <div class="experienceinreview">
+                The Experience:
+
+              </div>
+
+              <div class="textinreview">
+                <?=$review['review'] ?>
+              </div>
+              <div class="ratingsinreview">
+                Rating: 
+
+              </div>
+              <div class="percentageinreview">
+                <?=$review['rating'] ?>
+              </div>
+              <div class ="nothelpfulinreview btn">
+                Not Helpful?
+
+              </div>
+              <div class="helpfulinreview btn btn-primary">
+                Helpful?
+
+              </div>
+
+          </div>
+
+        </div>
+
+    <?php endforeach ?>
+  <?php else: ?>
+  <p id="noreviewsincharity">No Reviews... Yet</p>
+
+  <?php endif ?>
+
+<!--
   <div id="reviewsupercontainer">
     <div class="reviewcontainer">
       <div class="reviewcontainerleft">
@@ -210,7 +272,7 @@
 
     </div>
 
-  </div>
+  </div>-->
 
 </div>
     

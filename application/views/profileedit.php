@@ -99,13 +99,20 @@
         </div>
       </div>
 
-      
+       <!--
       <div id="picturesofsomeonevolunteering">
        Picture of <?=$profile['firstname'] ?> Volunteering!
       </div>
     </div>  
-    <div id="collage">
-        <div class="item">
+
+  <div id="collage">
+    <?php foreach($profile['images'] as $image): ?>
+    <div class="item">
+          <img src="<?=base_url() ?>userimages/volunteerimages/<?=$image['imagepath'] ?>" width="200" height="200">
+        </div>
+
+    <?php endforeach ?>
+       <div class="item">
           <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
         
@@ -121,6 +128,8 @@
         <div class="item">
           <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
+         -->
+      
     </div>
          
     <!--<div class="btn-group" id="calendarcontrol">
@@ -131,7 +140,7 @@
       <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
     <div id="calendar">
 
-    </div>-->
+    </div>
     <div id="reviewtitleinprofile">
       <?=$profile['firstname'] ?>'s Reviews:
     </div>
@@ -229,7 +238,7 @@
 
       </div>
 
-    </div>
+    </div>-->
 
   </div>
 </form>

@@ -85,7 +85,7 @@
 		</div>
 	</div>
 
-	<?=form_open("charity/doreview", array("class" => "form-horizontal", "role" => "form")) ?>
+	<?=form_open("charity/doreview", array("class" => "form-horizontal", "role" => "form", "enctype"=>"multipart/form-data")) ?>
 
 	<div id="writeareviewaboutcharity">
       Write a review about us!
@@ -124,6 +124,14 @@
 	   	</div>
 	 </div>
 
+	 <div id="uploadimages">
+	 	<p>You may upload three images you took of you volunteering for this event to share with others!</p>
+
+	 	<input type="file" name="experienceimage[]">
+		<input type="file" name="experienceimage[]">
+		<input type="file" name="experienceimage[]">
+	 </div>
+
 	<button class="textpost btn btn-primary" type="submit" id="postincharity">
 		Post
 	</button>
@@ -141,7 +149,13 @@
 	</div>
 
 	<div id="collage">
-        <div class="item">
+		<?php foreach($images as $image): ?>
+		<div class="item">
+          <img src="<?=base_url() ?>userimages/volunteerimages/<?=$image['imagepath'] ?>" width="200" height="200">
+        </div>
+
+		<?php endforeach ?>
+        <!--<div class="item">
           <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
         
@@ -157,7 +171,7 @@
         <div class="item">
           <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>
-            
+         -->
       
     </div>
 

@@ -87,6 +87,20 @@ class Charity_expert extends CI_Model
 		return null;
 	}
 
+	function get_images($id)
+	{
+		$sql = "select imagepath from charityimage where charityid = ?";
+
+		$result = $this->db->query($sql, $id);
+
+		if($result->num_rows() > 0)
+		{
+			return $result->result_array();
+		}
+
+		return null;
+	}
+
 	function get_profile_by_name($name)
 	{
 		$sql = "select * from charity where name = ?";
@@ -113,8 +127,14 @@ class Charity_expert extends CI_Model
 
 	function applyreview($reviewdata)
 	{
-		$this->db->insert('charityreview', $reviewdata); 
+		$this->db->insert('charityreview', $reviewdata);
+		return $this->db->insert_id();
 
+	}
+
+	function addimagetoreview($imagedata)
+	{
+		$this->db->insert('charityimage', $imagedata);
 	}
 
 }

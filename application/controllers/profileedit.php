@@ -67,7 +67,7 @@ class Profileedit extends MY_Controller {
 	{
 		$allowedExts = array("gif", "jpeg", "jpg", "png");
 		$temp = explode(".", @$_FILES["newportrait"]["name"]);
-		$extension = tolower(end($temp));
+		$extension = strtolower(end($temp));
 
 		if (((@$_FILES["newportrait"]["type"] == "image/jpeg")
 		|| (@$_FILES["newportrait"]["type"] == "image/jpg")

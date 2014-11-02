@@ -149,12 +149,14 @@
 	</div>
 
 	<div id="collage">
-		<?php foreach($images as $image): ?>
+		<?php if(!is_null($images)): ?>
+		<?php @foreach($images as $image): ?>
 		<div class="item">
           <img src="<?=base_url() ?>userimages/volunteerimages/<?=$image['imagepath'] ?>" width="200" height="200">
         </div>
 
 		<?php endforeach ?>
+	<?php endif ?>
         <!--<div class="item">
           <img src="<?=base_url() ?>img/land1.jpg" width="200" height="200">
         </div>

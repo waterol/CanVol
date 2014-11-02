@@ -149,7 +149,7 @@ class Charity extends MY_Controller {
 	{
 		$allowedExts = array("gif", "jpeg", "jpg", "png");
 		$temp = explode(".", @$file["name"]);
-		$extension = end($temp);
+		$extension = tolower(end($temp));
 		$genname = $this->random_string(30) . "." . $extension;
 
 		if (((@$file["type"] == "image/jpeg")

@@ -70,7 +70,7 @@
         </div>
 
         <div id="editbutton" class="margin-top-20">
-          <?php if($_SESSION['volunteerid'] == $profile['id']): ?>
+          <?php if(@$_SESSION['volunteerid'] == $profile['id']): ?>
 
             <button class="btn btn-primary" onclick="location.href='<?=base_url() ?>profileedit/<?=$_SESSION['volunteerid'] ?>'">Edit Profile</button>
 
@@ -104,12 +104,12 @@
       </div>
   </div>
        
-  <div class="btn-group" id="calendarcontrol">
+  <!--<div class="btn-group" id="calendarcontrol">
     <button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
     <button class="btn" data-calendar-nav="today">Today</button>
     <button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
   </div>
-     <!--<h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
+     <h2>Upcoming Opportunities for <span id="calendarmonth"></span></h2>
  <div id="calendar">
 
   </div>-->

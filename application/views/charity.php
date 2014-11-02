@@ -101,10 +101,11 @@
 		<div class="alert alert-warning alert-dismissable"><a href="#" class="close" data-dismiss="alert">×</a> <?=$verrors ?></div>
 	<?php endif ?>
 
+	<?php if(array_key_Exists("volunteerid", $_SESSION)): ?>
+
     <div id="writingincharity">
    		<textarea id="writeareviewcharity" name="review" placeholder="Type here..."><?=set_value('review'); ?></textarea>
    	</div>
-   	
    	<div id="besidethereview">
 	   	<div id="ratingincharity">
 	   		Rate Your Experience 
@@ -127,6 +128,11 @@
 		Post
 	</button>
 	
+	<?php else: ?>
+
+	<div id="pleaselogin">Please login to write a review!</div>
+
+	<?php endif ?>
 
 	</form>
 
@@ -155,7 +161,7 @@
       
     </div>
 
-	<div class="btn-group" id="calendarcontrol">
+	<!--<div class="btn-group" id="calendarcontrol">
 		<button class="btn btn-primary" data-calendar-nav="prev">&lt;&lt; Prev</button>
 		<button class="btn" data-calendar-nav="today">Today</button>
 		<button class="btn btn-primary" data-calendar-nav="next">Next &gt;&gt;</button>
@@ -164,7 +170,7 @@
 
 
 	<div id="calendar">
-	</div>
+	</div>-->
 
 	<?php if(!is_null($reviews)): ?>
 		<?php foreach($reviews as $review): ?>

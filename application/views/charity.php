@@ -150,7 +150,7 @@
 
 	<div id="collage">
 		<?php if(!is_null($images)): ?>
-		<?php @foreach($images as $image): ?>
+		<?php foreach($images as $image): ?>
 		<div class="item">
           <img src="<?=base_url() ?>userimages/volunteerimages/<?=$image['imagepath'] ?>" width="200" height="200">
         </div>

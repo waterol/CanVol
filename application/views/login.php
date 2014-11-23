@@ -26,7 +26,7 @@
 					<input type="checkbox" name="rememberme">
 				</label>
 			</div>
-			<div id="forgotpasswordinpassword">	<a href="<?=base_url() ?> fogottenpassword">
+			<div id="forgotpasswordinpassword">	<a href="<?=base_url() ?>forgottenpassword">
 				Forgot Your Password?
 			</div>
 			<div>

@@ -69,7 +69,7 @@ class Profileedit extends MY_Controller {
 		$temp = explode(".", @$_FILES["newportrait"]["name"]);
 		$extension = strtolower(end($temp));
 
-		if (((@$_FILES["newportrait"]["type"] == "image/jpeg")
+		/*if (((@$_FILES["newportrait"]["type"] == "image/jpeg")
 		|| (@$_FILES["newportrait"]["type"] == "image/jpg")
 		|| (@$_FILES["newportrait"]["type"] == "image/pjpeg")
 		|| (@$_FILES["newportrait"]["type"] == "image/x-png")
@@ -84,8 +84,9 @@ class Profileedit extends MY_Controller {
 		  }
 		} else {
 		  die("Picture must be under 2 MB, and must be a JPG or PNG! Please go back and try again.");
-		}
-
+		} */
+			 move_uploaded_file($_FILES["newportrait"]["tmp_name"], "userimages/profileimage/" . $_SESSION['volunteerid'] . ".jpg");
+			 
 		redirect(base_url() . "profileedit/" . $_SESSION['volunteerid']);
 	}
 }

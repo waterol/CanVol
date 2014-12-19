@@ -2,7 +2,6 @@
     <div id="slides">
       <ul class="rslides">
         <li><img src="<?=base_url() ?>img/bestcanvol.png" alt=""></li>
-        <li><img src="<?=base_url() ?>img/volunteeropp.png" alt=""></li>
       </ul>
       <?php if(!array_key_exists('userid', $_SESSION)): ?>
       <div id="slidetext" >

@@ -31,27 +31,18 @@
     <div>
       <div id="toprow">
         <div class="toprowleft">
-          <span id="identity"> <a href="<?=base_url() ?>"> CanVol.org </a> </span>
+          <span id="identity"> <a href="<?=base_url() ?>"> CanVol.org </a> <span id="betaforheader"> (Beta) </span> </span>
                  </div>
         <div class="toprowright" id="logincolumn">
           <?php if(array_key_exists('userid', $_SESSION)): ?>
            
-            <div class="row">
-              <div class="col-sm-6" id="welcomeprofile">
                 Welcome <?=$_SESSION['firstname'] ?>!
-              </div>
-              
-              <div class="col-sm-6">
                  <button onclick="location.href='<?=base_url() ?>profile/<?=$_SESSION['volunteerid'] ?>'" id="yourprofileonhome" class="btn">
                   Your Profile
                 </button>
                 <button onclick="location.href='<?=base_url() ?>login/logout'" id="loginlogoutonhome" class="btn">
                   Logout
-                </button>
-
-              </div>
-               
-            </div>
+                </butt
 
           <?php else: ?>
 

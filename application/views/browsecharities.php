@@ -31,7 +31,7 @@
 		<option value="downtown"> Downtown </option>
 
 	</select>
-	<select class="filterdropdowns" id="sortonbrowsecharities" name="sort">
+	<select id="sortonbrowsecharities" name="sort">
 		<option value="sort"> Sort </option>
 		<option value="mostrecent"> Most Recent </option>
 		<option value="mostpopular"> Most Popular </option>

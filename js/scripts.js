@@ -101,7 +101,7 @@ function sortUsingNestedText(parent, childSelector, keySelector) {
 
     $('#sortonbrowsecharities').change(function() {
         if(this.value == "mostpopular")
-            sortUsingNestedText($('#charitylist'), 'a', '.reviewsinbrowsecharities');
+            sortUsingNestedText($('#charitylist'), 'a', '.ratingsinbrowsecharities');
         if(this.value == "highestrated")
             sortUsingNestedText($('#charitylist'), 'a', '.ratingsinbrowsecharities');
     });

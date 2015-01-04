@@ -2,7 +2,7 @@
 	<div id="alltheinformationinthisbox">
 		<p id="contactusfirsttitle"> How can we help a fellow CanVoler? </p>
 		<div id="contactinformationincontact">
-			<form>
+			<?=form_open('contactus/contact'); ?>
 				<p class="contactustitles"> Your Name </p>
 				<input type="text" name="yourname" placeholder="Your Name" class="classforinputsincontact">
 				<p class="contactustitles"> Email Address </p>

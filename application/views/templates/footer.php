@@ -1,7 +1,7 @@
     
     <div class="container" id="footer">
       <p>Copyright &copy; 2014 CanVol</p>
-      <p>Privacy Policy | <a href="<?=base_url() ?>contactus"> Contact Us </a>  </p>
+      <p><a href="<?=base_url() ?>privacypolicy">Privacy Policy</a> | <a href="<?=base_url() ?>contactus"> Contact Us </a>  </p>
 
     </div>
 

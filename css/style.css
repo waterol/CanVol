@@ -328,10 +328,24 @@ label
 
 #searchwide
 {
-	width:100%;
+	width:75%;
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  height:35px;
 }
 
+#searchonhome
+{
+  width: 24.6%;
+  height:35px;
+  margin-top: 10px;
+  background-color: #8BC53F;
+  color:white;
+  font-size: 1.4em;
+  border:none;
+  border-radius: 0px;
 
+}
 
 #browsecharities
 {
@@ -341,6 +355,8 @@ label
   border:none;
   color: #FFFFFF;
   height: 100%;
+  font-size: 1.4em;
+  margin-bottom: 50px;
 }
 
 
@@ -348,6 +364,7 @@ label
 {
   width:100%;
 }
+
 
 /* End search box */
 

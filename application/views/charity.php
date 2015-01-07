@@ -219,7 +219,7 @@
 
 			        </div>
 			        <div class="percentageinreview">
-			          <?=$review['rating'] ?>
+			          <?=rating_to_words($review['rating']) ?>
 			        </div>
 			        <div class="hoursinreview">
 			        	<?=$review['hours'] ?> Hours Volunteered

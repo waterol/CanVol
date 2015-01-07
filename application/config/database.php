@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'tophatandmonocle';
+$active_group = 'canvolorg';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
@@ -79,6 +79,22 @@ $db['tophatandmonocle']['dbcollat'] = 'utf8_general_ci';
 $db['tophatandmonocle']['swap_pre'] = '';
 $db['tophatandmonocle']['autoinit'] = TRUE;
 $db['tophatandmonocle']['stricton'] = FALSE;
+
+$db['canvolorg']['hostname'] = 'localhost';
+$db['canvolorg']['username'] = 'canvol_user';
+$db['canvolorg']['password'] = '*******************';
+$db['canvolorg']['database'] = 'canvol_db';
+$db['canvolorg']['dbdriver'] = 'mysql';
+$db['canvolorg']['dbprefix'] = '';
+$db['canvolorg']['pconnect'] = TRUE;
+$db['canvolorg']['db_debug'] = TRUE;
+$db['canvolorg']['cache_on'] = FALSE;
+$db['canvolorg']['cachedir'] = '';
+$db['canvolorg']['char_set'] = 'utf8';
+$db['canvolorg']['dbcollat'] = 'utf8_general_ci';
+$db['canvolorg']['swap_pre'] = '';
+$db['canvolorg']['autoinit'] = TRUE;
+$db['canvolorg']['stricton'] = FALSE;
 
 
 /* End of file database.php */

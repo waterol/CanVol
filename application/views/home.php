@@ -17,6 +17,7 @@
       <form method="POST" action="<?=base_url() ?>browsecharities/search" id="searchform">
       <div id="searchbrowse">
           <input id="searchwide" name="terms" type="text" placeholder="Search for Charities" class="input-sm">
+          <button type="submit" id="searchcharities"><span class="glyphicon glyphicon-search"></span></button>
           <button onclick="location.href='<?=base_url() ?>browsecharities'" id="browsecharities" name="signup"> Browse Charities!</button>
       </div>
 

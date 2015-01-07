@@ -328,14 +328,24 @@ label
 
 #searchwide
 {
-	width:100%;
+	width:60%;
+  display: inline-block;
 }
 
-
+#searchcharities
+{
+  display: inline-block;
+  border-radius: 0px;
+  background-color: #428bca;
+  border:none;
+  color: #FFFFFF;
+  height: 100%;
+}
 
 #browsecharities
 {
-  width:100%;
+  width:20%;
+  display: inline-block;
   border-radius: 0px;
   background-color: #D23988;
   border:none;

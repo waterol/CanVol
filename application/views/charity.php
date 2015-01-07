@@ -221,7 +221,10 @@
 			        <div class="percentageinreview">
 			          <?=$review['rating'] ?>
 			        </div>
-			        <div class ="nothelpfulinreview btn">
+			        <div class="hoursinreview">
+			        	<?=$review['hours'] ?> Hours Volunteered
+			        </div>
+			        <!--<div class ="nothelpfulinreview btn">
 			          Not Helpful?
 
 			        </div>
@@ -229,7 +232,7 @@
 			          Helpful?
 
 			        </div>
-
+					-->
 			    </div>
 
 		  	</div>

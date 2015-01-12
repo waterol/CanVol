@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_group = 'canvolorg';
+$active_group = 'tophatandmonocle';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
